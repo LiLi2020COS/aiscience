@@ -3,17 +3,18 @@
 @media(max-width:1023px){.research-report .editorial-grid{grid-template-columns:1fr}.research-report .editorial-grid aside{position:static;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.research-report .editorial-grid aside>div{margin:0}}@media(max-width:700px){.report-tools{flex-wrap:wrap;gap:4px}.jump{width:100%}.jump select{min-width:0;flex:1}.report-tools>div{gap:12px;flex-wrap:wrap}.research-report .reportpart{padding-top:22px}.research-report header .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.research-report header .grid>div{padding:9px;border-bottom:0}.research-report header .grid>div:nth-child(2n){border-right:0}.research-report .editorial-grid aside{grid-template-columns:1fr}.research-report .editorial-prose{font-size:1.05rem}.research-report .figure-plate{padding-inline:10px}.research-report figcaption{gap:8px;flex-wrap:wrap}.research-report section[id$="appendix"] summary{gap:8px;padding:12px}.research-report .reportpart>header .border-y{display:grid}.research-report .reportpart>header .border-y>.hidden{display:none}.research-report #p2-fig-3 figcaption>div:last-of-type{max-width:100%;white-space:normal}}
 @media print{.report-tools,.report-bridge,.no-print,.research-report aside,.annual-explorer{display:none!important}.research-report .editorial-grid{display:block}.research-report .figure-plate,.research-report .print-avoid{break-inside:avoid}.research-report .overflow-x-auto{overflow:visible}.research-report canvas{max-width:100%}}
 
-/* Match the supplied report's white figure plates, panel spacing and soft green canvas. */
-body:has(.research-report){background:#f1f6f2}
-.research-report .figure-plate{border:1px solid #bacdbf;border-radius:10px;background:#fff;padding:clamp(16px,2vw,28px);box-shadow:0 2px 12px rgb(27 59 41 / 5%)}
-.research-report .figure-plate figcaption{border-bottom-color:#cad8cd}
-.research-report .reportpart>header>div:has(>.report-metrics){background:#fff;border:1px solid #c6d4c8;border-top:0;border-radius:0 0 7px 7px}
+/* Keep report pages on the same warm paper background as the homepage. */
+body:has(.research-report){background:var(--paper)}
+.research-report [class*="hover:bg-botanical-soft"]:hover{background-color:#efede6}
+.research-report .figure-plate{border:1px solid var(--line);border-radius:10px;background:#fff;padding:clamp(16px,2vw,28px);box-shadow:0 2px 12px rgb(23 23 19 / 5%)}
+.research-report .figure-plate figcaption{border-bottom-color:var(--line)}
+.research-report .reportpart>header>div:has(>.report-metrics){background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 7px 7px}
 .research-report .reportpart>header .report-metrics>div{border-top:0;padding:14px clamp(10px,1.1vw,18px);min-width:0;container-type:inline-size}
 .research-report .reportpart>header .report-metrics>div>div{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.1rem,1.85vw,2.05rem);font-size:clamp(1.1rem,10.4cqi,2.05rem);white-space:nowrap;font-weight:700;line-height:1.18;letter-spacing:-.045em;color:#101110;font-variant-numeric:lining-nums tabular-nums}
 .research-report .report-metrics>div>div>span{font-size:.58em;font-weight:600;letter-spacing:0}
 .research-report .reportpart>header .report-metrics>div:first-child{border-top:0}
 .research-report figure canvas{cursor:crosshair}
-.report-hover{position:fixed;z-index:1000;pointer-events:none;max-width:min(23rem,calc(100vw - 12px));padding:10px 13px;background:#fff;border:1px solid #8ba899;border-left:3px solid #375e4d;border-radius:4px;box-shadow:0 4px 16px rgb(23 40 31 / 17%);color:#151916;font: .86rem/1.45 var(--sans);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.report-hover{position:fixed;z-index:1000;pointer-events:none;max-width:min(23rem,calc(100vw - 12px));padding:10px 13px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);border-radius:4px;box-shadow:0 4px 16px rgb(23 23 19 / 14%);color:var(--ink);font: .86rem/1.45 var(--sans);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .report-hover .hover-title{font-weight:700;margin-bottom:3px}
 .report-hover .hover-note{font-size:.81rem;margin-top:3px}
 @media(max-width:460px){.research-report header .grid.report-metrics{grid-template-columns:minmax(0,1fr)}.research-report .reportpart>header .report-metrics>div{padding:10px 14px;border-right:0}.research-report .reportpart>header .report-metrics>div>div{font-size:1.5rem}}

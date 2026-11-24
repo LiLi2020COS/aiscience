@@ -86,19 +86,19 @@
       { label: 'Research evaluation favours AI',              pct: 16.22, ciLow: 7.65,  ciHigh: 31.14, count: 6  }
     ];
 
-    // Part II: 10 Safeguards (n = 19)
+    // Part II: 10 Safeguards (n = 33), ranked by F+
     // counts: [Not at all feasible, Slightly, Moderately, Feasible, Highly feasible, Not sure]
     const SAFEGUARDS = [
-      { label: 'Data, code and model disclosure',       counts: [0, 2, 4, 6, 6, 1], fPlus: 63.2, mPlus: 84.2 },
-      { label: 'Standardised AI-use disclosure',        counts: [0, 1, 4, 4, 7, 3], fPlus: 57.9, mPlus: 78.9 },
-      { label: 'Evidence-informed policy revision',     counts: [0, 2, 6, 6, 4, 1], fPlus: 52.6, mPlus: 84.2 },
-      { label: 'External or empirical validation',      counts: [0, 2, 6, 4, 6, 1], fPlus: 52.6, mPlus: 84.2 },
-      { label: 'Reproducibility checks',                counts: [0, 1, 7, 5, 5, 1], fPlus: 52.6, mPlus: 89.5 },
-      { label: 'AI and domain expert review',           counts: [0, 3, 5, 5, 4, 2], fPlus: 47.4, mPlus: 73.7 },
-      { label: 'AI-independent scientific evaluation',  counts: [0, 4, 3, 4, 4, 4], fPlus: 42.1, mPlus: 57.9 },
-      { label: 'Monitor AI use and imbalances',         counts: [0, 2, 8, 6, 2, 1], fPlus: 42.1, mPlus: 84.2 },
-      { label: 'Support underrepresented research',     counts: [1, 3, 6, 3, 3, 3], fPlus: 31.6, mPlus: 63.2 },
-      { label: 'Balance AI and non-AI research',        counts: [0, 1, 9, 3, 1, 5], fPlus: 21.1, mPlus: 68.4 }
+      { label: 'Data, code and model disclosure',       counts: [1, 4, 7, 9, 11, 1], fPlus: 60.6060606060606, mPlus: 81.8181818181818 },
+      { label: 'Standardised AI-use disclosure',        counts: [1, 1, 8, 6, 14, 3], fPlus: 60.6060606060606, mPlus: 84.8484848484848 },
+      { label: 'Reproducibility checks',                counts: [2, 3, 10, 10, 7, 1], fPlus: 51.5151515151515, mPlus: 81.8181818181818 },
+      { label: 'Evidence-informed policy revision',     counts: [1, 5, 11, 9, 6, 1], fPlus: 45.4545454545455, mPlus: 78.7878787878788 },
+      { label: 'External or empirical validation',      counts: [4, 5, 9, 7, 7, 1], fPlus: 42.4242424242424, mPlus: 69.6969696969697 },
+      { label: 'AI-independent scientific evaluation',  counts: [4, 7, 5, 6, 7, 4], fPlus: 39.3939393939394, mPlus: 54.5454545454545 },
+      { label: 'Monitor AI use and imbalances',         counts: [3, 5, 11, 9, 4, 1], fPlus: 39.3939393939394, mPlus: 72.7272727272727 },
+      { label: 'AI and domain expert review',           counts: [4, 6, 8, 8, 4, 3], fPlus: 36.3636363636364, mPlus: 60.6060606060606 },
+      { label: 'Support underrepresented research',     counts: [1, 10, 8, 8, 3, 3], fPlus: 33.3333333333333, mPlus: 57.5757575757576 },
+      { label: 'Balance AI and non-AI research',        counts: [4, 5, 10, 6, 1, 7], fPlus: 21.2121212121212, mPlus: 51.5151515151515 }
     ];
 
     /**
@@ -1061,9 +1061,9 @@
         data: {
           labels: ['Researchers: academic competition', 'Editors: publication competition'],
           datasets: [
-            { label: 'Disadvantage',    data: [78.05, 84.21], counts: [32, 16], backgroundColor: C.forest,  textColor: '#ffffff' },
-            { label: 'No disadvantage', data: [17.07, 10.53], counts: [7,  2],  backgroundColor: C.amber,   textColor: '#ffffff' },
-            { label: 'Unsure',          data: [4.88,  5.26],  counts: [2,  1],  backgroundColor: C.emerald, textColor: '#ffffff' }
+            { label: 'Disadvantage',    data: [78.05, 75.76], counts: [32, 25], backgroundColor: C.forest,  textColor: '#ffffff' },
+            { label: 'No disadvantage', data: [17.07, 21.21], counts: [7,  7],  backgroundColor: C.amber,   textColor: '#ffffff' },
+            { label: 'Unsure',          data: [4.88,  3.03],  counts: [2,  1],  backgroundColor: C.emerald, textColor: '#ffffff' }
           ]
         },
         options: {
@@ -1077,7 +1077,7 @@
             tooltip: {
               callbacks: {
                 label: ctx => {
-                  const n = ctx.dataIndex === 0 ? 41 : 19;
+                  const n = ctx.dataIndex === 0 ? 41 : 33;
                   return `${ctx.dataset.label}: ${ctx.dataset.counts[ctx.dataIndex]}/${n} (${ctx.parsed.x.toFixed(1)}%)`;
                 }
               }
@@ -1109,12 +1109,12 @@
       part2Charts.f4b = new Chart(document.getElementById('fig4-b'), {
         type: 'bar',
         data: {
-          labels: ['Researchers (n = 41)', 'Editors (n = 19)'],
+          labels: ['Researchers (n = 41)', 'Editors (n = 33)'],
           datasets: [
-            { label: 'Positive', data: [58.54, 52.63], counts: [24, 10], backgroundColor: C.forest,  textColor: '#ffffff' },
-            { label: 'Neutral',  data: [24.39, 26.32], counts: [10, 5],  backgroundColor: C.amber,   textColor: '#ffffff' },
-            { label: 'Negative', data: [2.44,  5.26],  counts: [1,  1],  backgroundColor: C.emerald, textColor: '#ffffff' },
-            { label: 'Unsure',   data: [14.63, 15.79], counts: [6,  3],  backgroundColor: C.mauve,   textColor: '#ffffff' }
+            { label: 'Positive', data: [58.54, 54.55], counts: [24, 18], backgroundColor: C.forest,  textColor: '#ffffff' },
+            { label: 'Neutral',  data: [24.39, 24.24], counts: [10, 8],  backgroundColor: C.amber,   textColor: '#ffffff' },
+            { label: 'Negative', data: [2.44,  9.09],  counts: [1,  3],  backgroundColor: C.emerald, textColor: '#ffffff' },
+            { label: 'Unsure',   data: [14.63, 12.12], counts: [6,  4],  backgroundColor: C.mauve,   textColor: '#ffffff' }
           ]
         },
         options: {
@@ -1128,7 +1128,7 @@
             tooltip: {
               callbacks: {
                 label: ctx => {
-                  const n = ctx.dataIndex === 0 ? 41 : 19;
+                  const n = ctx.dataIndex === 0 ? 41 : 33;
                   return `${ctx.dataset.label}: ${ctx.dataset.counts[ctx.dataIndex]}/${n} (${ctx.parsed.x.toFixed(1)}%)`;
                 }
               }
@@ -1173,9 +1173,9 @@
         colHeaders.classList.remove('hidden');
         legendFull.classList.remove('hidden');
         legendComp.classList.add('hidden');
-        footnote.textContent = 'F+ = feasible or highly feasible; M+ = at least moderately feasible. Denominator: all 19 editors (including not sure). Segment labels: counts (n).';
+        footnote.textContent = 'F+ = feasible or highly feasible; M+ = at least moderately feasible. Denominator: all 33 editors (including not sure). Segment labels: counts (n).';
 
-        const pctOf = idx => SAFEGUARDS.map(s => +(s.counts[idx] / 19 * 100).toFixed(2));
+        const pctOf = idx => SAFEGUARDS.map(s => +(s.counts[idx] / 33 * 100).toFixed(2));
         const cntOf = idx => SAFEGUARDS.map(s => s.counts[idx]);
 
         part2Charts.f5 = new Chart(canvas, {
@@ -1209,7 +1209,7 @@
                   },
                   label: ctx => {
                     const cnt = ctx.dataset.counts[ctx.dataIndex];
-                    return `${ctx.dataset.label}: ${cnt}/19 (${(cnt / 19 * 100).toFixed(1)}%)`;
+                    return `${ctx.dataset.label}: ${cnt}/33 (${(cnt / 33 * 100).toFixed(1)}%)`;
                   }
                 }
               }
@@ -1240,7 +1240,7 @@
         colHeaders.classList.add('hidden');
         legendFull.classList.add('hidden');
         legendComp.classList.remove('hidden');
-        footnote.textContent = 'Side-by-side comparison of overlapping cumulative thresholds: F+ (feasible or highly feasible) vs. M+ (at least moderately feasible) over all n = 19 editors.';
+        footnote.textContent = 'Side-by-side comparison of overlapping cumulative thresholds: F+ (feasible or highly feasible) vs. M+ (at least moderately feasible) over all n = 33 editors.';
 
         part2Charts.f5 = new Chart(canvas, {
           type: 'bar',
@@ -1278,7 +1278,7 @@
               legend: { display: false },
               tooltip: {
                 callbacks: {
-                  label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}% (${ctx.dataset.counts[ctx.dataIndex]}/19)`
+                  label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}% (${ctx.dataset.counts[ctx.dataIndex]}/33)`
                 }
               }
             },
@@ -1318,7 +1318,7 @@
       'fig3-c': 'Adoption drivers and 95% Wilson intervals among 37 AI users',
       'fig4-a': 'Perceived disadvantages for non-AI research',
       'fig4-b': 'Expected long-term effects on disciplinary sustainability',
-      'fig5-canvas': 'Feasibility of editorial safeguards among 19 journal professionals'
+      'fig5-canvas': 'Feasibility of editorial safeguards among 33 journal professionals'
     };
 
     function enableKeyboardReadout(canvas) {

@@ -1,0 +1,1060 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfaf7"><title>Full Report | AI &amp; Science</title><meta name="description" content="Full Report — evidence on AI methods, research data and editorial practice."><link rel="icon" href="art/icon.svg"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="report-utilities.css"><link rel="stylesheet" href="report.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="mast"><div class="frame mast-inner"><a class="brand" href="index.html" aria-label="AI and Science home"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>AI <em>&amp;</em> Science</a><nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="plos.html">Data Trend</a><a href="publishing.html">Publishing Surveys</a><a href="team.html">Team</a></nav></div></header><main id="main" class="frame"><div class="report-tools"><label class="jump">Contents <select id="jump"><option value="">Choose a section</option><option value="p1-sec-1">Data Trend · Annual trends</option><option value="p1-sec-2">Data Trend · Era comparisons</option><option value="p1-sec-3">Data Trend · Empirical contribution</option><option value="p1-appendix">Data Trend · Appendix A1</option><option value="p2-sec-1">Publishing Surveys · Adoption and drivers</option><option value="p2-sec-2">Publishing Surveys · Publishing pressures</option><option value="p2-sec-3">Publishing Surveys · Editorial safeguards</option><option value="p2-appendix">Publishing Surveys · Appendices A2–A4</option></select></label></div><div class="research-report"><div id="part-1-container" class="reportpart">
+
+      
+      <header class="mb-10 sm:mb-12">
+        <div class="max-w-4xl">
+          
+          <div class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-botanical-eyebrow mb-3.5">
+            <span class="w-6 h-[2px] bg-botanical-forest"></span>
+            <span>PART I · EMPIRICAL LITERATURE ANALYSIS (PLOS CORPUS)</span>
+          </div>
+
+          
+          <h1 class="data-trend-title font-display font-bold text-3xl sm:text-[2.75rem] lg:text-[3.15rem] leading-[1.13] tracking-tight text-botanical-evergreen mb-5">Data Trend</h1>
+
+          
+          <p class="report-headline">AI Is Reshaping How Science Is Conducted</p><p class="font-serif text-lg sm:text-[1.22rem] leading-[1.62] text-botanical-muted mb-6 max-w-3xl">
+            An empirical analysis of 353,810 PLOS articles received between 2003 and 2025—predominantly in clinical medicine—traces the rise of AI-driven workflows, shifting primary-versus-secondary data provenance, and widening structural ratios across three methodological eras.
+          </p>
+
+          
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 py-3.5 border-y border-botanical-border text-xs text-botanical-muted">
+            <span><strong class="font-semibold text-botanical-evergreen">Scope:</strong> 353,810 PLOS Articles (AI Subset: <span class="font-mono">N = 14,507</span>)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Period:</strong> <span class="font-mono">2003–2025*</span> (2025 incomplete)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Methodological Eras:</strong> ML, DL, GenAI*</span>
+          </div>
+        </div>
+
+        
+        <div class="mt-7 bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+          <div class="report-metrics grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-botanical-border/75">
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-forest">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                66.0% → 46.8%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Primary-data article share from ML to GenAI* era (<span class="font-mono">N = 353,810</span>)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-amber">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                13.7% → 33.5%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Data-consumer share relying on previously collected data
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-teal">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-forest tabular-nums tracking-tight">
+                1.6% → 11.3%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                AI-method article share by era (reaching <span class="font-mono">15.6%</span> in incomplete 2025*)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-terracotta">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-terracotta tabular-nums tracking-tight">
+                0.453 <span class="text-sm font-sans font-normal text-botanical-muted">vs.</span> 1.464
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Mean quarterly CPDC in GenAI* era: Non-AI vs. AI (<span class="font-mono">*** p &lt; .001</span>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <div class="editorial-grid grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,820px)_1fr] gap-8 xl:gap-11 items-start">
+
+        
+        <article class="min-w-0 space-y-12">
+
+          
+          <section id="p1-sec-1" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.1 · TWENTY-THREE YEARS OF PUBLISHED ARTICLES
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                Longitudinal Shifts in AI Adoption and Data Provenance
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p class="editorial-dropcap">
+                Among 353,810 PLOS articles received between 2003 and 2025—predominantly in clinical medicine—the proportion reporting primary data fell from about 66% in the machine-learning era (66.0%) to under 47% in the generative-AI era (46.8%, and 46.6% in incomplete 2025* records). Over the same twenty-three-year span, the share relying on previously collected data rose from below 14% (13.7%) to almost 34% (33.5%, peaking at 33.8% in 2024), while the share identified as AI-driven increased from under 2% (1.6%) to over 11% (11.3%), reaching 15.6% in incomplete 2025* (<a href="#p1-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1a–c</a>).
+              </p>
+              <p>
+                Within the 14,507 articles identified as using AI methods since 2006, methodological composition also transformed: classical machine learning declined from roughly 86%–91% during 2007–2013 to 37.4% in 2025*, overtaken by deep learning (55.4%) and a fast-emerging wave of generative AI (6.5%) and hybrid methods (0.7%). Simultaneously, structural indicators tracking the balance between data reuse and original collection—both the consumer-to-primary-data-contributor ratio (CPDC) and normalized Shannon evenness—climbed steadily after 2012, reaching 0.544 in 2024 (0.504 in 2025*) and 0.843 in 2025*, respectively (<a href="#p1-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1d</a>).
+              </p>
+            </div>
+
+            
+            <div class="bg-botanical-tint border-l-4 border-botanical-forest rounded-r-[10px] px-5 py-4 print-avoid">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.12em] text-botanical-evergreen mb-1.5">
+                Interpretive Caveat · Non-Causal Compositional Signal
+              </div>
+              <p class="font-serif text-[0.96rem] leading-[1.7] text-botanical-prose">
+                These estimates do not mean that AI is displacing primary-data-based research. Changes in journal coverage, article types, research practices, or classification performance could each produce such trends, and a smaller proportion of papers reporting primary data does not necessarily mean less data is being collected, since growth in data-reuse studies can dilute primary-data share without coming at the expense of primary collection. Expanding to a larger corpus improves precision only when underlying classifications are rigorously validated.
+              </p>
+            </div>
+
+            
+            <figure id="p1-fig-1" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 1 <span class="text-botanical-border font-normal mx-1">|</span> Longitudinal trends in AI methods and data provenance
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  PLOS corpus: N = 353,810 articles (2003–2025*; 2025 incomplete); AI subset: N = 14,507 (2006–2025*)
+                </p>
+              </figcaption>
+
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    A <span class="font-semibold ml-1">Articles using AI methods (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-botanical-forest"></span>AI-method share</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#f3f8f5] border border-botanical-border"></span>ML</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#f7f6ee] border border-botanical-border"></span>DL</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#faf2ef] border border-botanical-border"></span>GenAI*</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-a"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    B <span class="font-semibold ml-1">AI-family composition (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>ML</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#2d7d82]"></span>DL</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>GenAI</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#4ea17c]"></span>Hybrid</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-b"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    C <span class="font-semibold ml-1">Share of classified articles by data role (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>Primary producers</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#4ea17c]"></span>Mixotrophs</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#d9822b]"></span>Data consumers</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#9db2a5]"></span>No data</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-c"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    D <span class="font-semibold ml-1">Structural balance: CPDC ratio and Shannon evenness</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>CPDC ratio (left)</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#123f2f]"></span>Shannon evenness (right)</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-d"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-5 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                Received year periods: ML (2003–2014), DL (2015–2022), GenAI* (2023–2025*; 2025 incomplete). CPDC = Consumer-to-Primary-Data-Contributor ratio.
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p1-sec-2" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.2 · METHODOLOGICAL ERAS &amp; MATCHED QUARTERS
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                Era-Level Shifts and Within-Period AI Association
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Aggregating the corpus across three methodological eras—the Machine Learning era (ML: 2003–2014, <span class="font-mono text-[0.92em]">n = 142,803</span>), the Deep Learning era (DL: 2015–2022, <span class="font-mono text-[0.92em]">n = 166,917</span>), and the Generative AI era (GenAI*: 2023–2025*, <span class="font-mono text-[0.92em]">n = 44,090</span>)—highlights the scale of the compositional transition. Era-mean AI adoption expanded nearly sevenfold from 1.6% in ML to 4.3% in DL and 11.3% in GenAI* (<a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2a</a>). Over those same three eras, primary producers stepped down from 66.0% to 58.1% and 46.8%, mixotrophs eased from 20.0% to 15.6%, data consumers more than doubled from 13.7% to 33.5%, and articles without empirical data rose from 0.2% to 4.1% (<a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2b</a>).
+              </p>
+              <p>
+                Crucially, the association between AI methods and secondary data consumption persists even when holding calendar time constant. Comparing matched received-date quarters across all three eras (ML: <span class="font-mono text-[0.92em]">n = 40</span> quarters; DL: <span class="font-mono text-[0.92em]">n = 32</span>; GenAI*: <span class="font-mono text-[0.92em]">n = 11</span>), AI-classified papers exhibited significantly higher quarterly CPDC means than non-AI papers in every period: 1.164 vs. 0.176 in ML, 1.122 vs. 0.280 in DL, and 1.464 vs. 0.453 in GenAI* (all Holm-adjusted <span class="font-mono text-[0.92em]">p &lt; .001</span>; <a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2c</a>).
+              </p>
+            </div>
+
+            
+            <figure id="p1-fig-2" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 2 <span class="text-botanical-border font-normal mx-1">|</span> Era-level shifts and within-period association with AI use
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  PLOS classified articles by era (ML: n = 142,803; DL: n = 166,917; GenAI*: n = 44,090) and matched received-date quarters
+                </p>
+              </figcaption>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    A <span class="font-semibold ml-1">AI-method articles by era (%)</span>
+                  </h3>
+                  <div class="flex items-center gap-3 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>Era mean (%)</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-a"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    B <span class="font-semibold ml-1">Data provenance by era (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10.5px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#16583d]"></span>Producer</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#4ea17c]"></span>Mixotroph</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#d9822b]"></span>Consumer</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#9db2a5]"></span>No data</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-b"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    C <span class="font-semibold ml-1">Mean quarterly CPDC: Non-AI vs. AI</span>
+                  </h3>
+                  <div class="flex items-center gap-3.5 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#8ca398]"></span>Non-AI</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>AI</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-c"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-5 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                Panel C compares matched received-date quarters (ML: n = 40; DL: n = 32; GenAI*: n = 11); Holm-adjusted significance: *** p &lt; .001. GenAI* includes incomplete 2025.
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p1-sec-3" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.3 · EMPIRICAL SYNTHESIS
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                What Is Missing: A Measure of Empirical Contribution
+              </h2>
+            </div>
+
+            
+            <blockquote class="bg-botanical-tint border-l-4 border-botanical-forest rounded-r-[10px] px-6 sm:px-8 py-6 sm:py-7 shadow-plate print-avoid">
+              <p class="font-serif italic text-xl sm:text-[1.38rem] leading-[1.6] text-botanical-evergreen">
+                “What is missing, then, is not evidence but a measure. Publication counts record that a paper exists; they do not record whether it added an observation to the world or reanalysed observations already there. Without that distinction, the balance could shift without anyone noticing—and the first to notice might be the end users needing data that was no longer collected.”
+              </p>
+            </blockquote>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Bibliometric trends can document how the published record is shifting, but they cannot by themselves reveal the human incentives driving those patterns. To understand why researchers are adopting AI so rapidly—and how journal professionals perceive competitive pressures, peer-review standards, and realistic safeguards—Part II examines parallel pilot surveys collected at both the starting point and endpoint of the scientific publication chain.
+              </p>
+            </div>
+          </section>
+
+          
+          <section id="p1-appendix" class="scroll-mt-36">
+            <details class="group bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+              <summary class="px-5 sm:px-6 py-4 flex items-center justify-between gap-4 cursor-pointer select-none hover:bg-botanical-soft transition">
+                <div>
+                  <div class="text-[10.5px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow">
+                    PART I APPENDIX · VERIFIED CORPUS TABLE
+                  </div>
+                  <h2 class="font-display font-bold text-lg text-botanical-evergreen mt-0.5">
+                    Table A1 · PLOS Era Summary &amp; Quarterly CPDC Comparison
+                  </h2>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-botanical-canvas border border-botanical-border text-botanical-evergreen group-open:bg-botanical-forest group-open:text-white group-open:border-botanical-forest transition inline-flex items-center gap-1.5 shrink-0">
+                  <span class="group-open:hidden">Show Table</span>
+                  <span class="hidden group-open:inline">Hide Table</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+
+              <div class="px-5 sm:px-6 pb-6 pt-4 border-t border-botanical-border bg-white">
+                <div class="overflow-x-auto rounded-lg border border-botanical-border">
+                  <table class="min-w-full text-xs text-left border-collapse tabular-nums">
+                    <thead class="bg-botanical-tint text-botanical-evergreen font-semibold border-b border-botanical-border">
+                      <tr>
+                        <th class="px-3 py-2.5">Era</th>
+                        <th class="px-3 py-2.5 text-right">Articles (n)</th>
+                        <th class="px-3 py-2.5 text-right">AI Share</th>
+                        <th class="px-3 py-2.5 text-right">Producer</th>
+                        <th class="px-3 py-2.5 text-right">Mixotroph</th>
+                        <th class="px-3 py-2.5 text-right">Consumer</th>
+                        <th class="px-3 py-2.5 text-right">No Data</th>
+                        <th class="px-3 py-2.5 text-right">Qtr CPDC (Non-AI / AI)</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-botanical-border/60 font-mono text-botanical-prose">
+                      <tr class="hover:bg-botanical-soft">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">ML (2003–2014)</td>
+                        <td class="px-3 py-2 text-right">142,803</td>
+                        <td class="px-3 py-2 text-right">1.6%</td>
+                        <td class="px-3 py-2 text-right">66.0%</td>
+                        <td class="px-3 py-2 text-right">20.0%</td>
+                        <td class="px-3 py-2 text-right">13.7%</td>
+                        <td class="px-3 py-2 text-right">0.2%</td>
+                        <td class="px-3 py-2 text-right">0.176 / 1.164***</td>
+                      </tr>
+                      <tr class="hover:bg-botanical-soft">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">DL (2015–2022)</td>
+                        <td class="px-3 py-2 text-right">166,917</td>
+                        <td class="px-3 py-2 text-right">4.3%</td>
+                        <td class="px-3 py-2 text-right">58.1%</td>
+                        <td class="px-3 py-2 text-right">18.9%</td>
+                        <td class="px-3 py-2 text-right">22.3%</td>
+                        <td class="px-3 py-2 text-right">0.8%</td>
+                        <td class="px-3 py-2 text-right">0.280 / 1.122***</td>
+                      </tr>
+                      <tr class="hover:bg-botanical-soft bg-botanical-soft/60">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">GenAI* (2023–2025*)</td>
+                        <td class="px-3 py-2 text-right">44,090</td>
+                        <td class="px-3 py-2 text-right font-semibold text-botanical-forest">11.3%</td>
+                        <td class="px-3 py-2 text-right font-semibold">46.8%</td>
+                        <td class="px-3 py-2 text-right">15.6%</td>
+                        <td class="px-3 py-2 text-right font-semibold text-botanical-terracotta">33.5%</td>
+                        <td class="px-3 py-2 text-right">4.1%</td>
+                        <td class="px-3 py-2 text-right">0.453 / 1.464***</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </details>
+          <details class="annual-explorer"><summary>Explore annual values and data tables</summary><div class="plot-card"><label for="metric">Annual trend</label><select id="metric"><option value="ai">AI adoption</option><option value="role">Data roles</option><option value="family">AI families</option><option value="balance">CPDC and evenness</option></select><div id="chart"></div><div id="legend" class="legend"></div><label class="yearlabel" for="year">Inspect received year <output id="year-label" for="year"></output></label><input id="year" type="range" min="0" max="22" value="22"><div id="readout" aria-live="polite"></div></div><p class="note">* 2025 covers incomplete records. The AI-family series starts in 2006. Dashed lines mark the boundaries between methodological eras.</p><details class="fold"><summary>Annual data</summary><div class="table-scroll" tabindex="0"><table><thead><tr><th scope="col">Received year</th><th scope="col">AI (%)</th><th scope="col">Producer (%)</th><th scope="col">Mixed (%)</th><th scope="col">Consumer (%)</th><th scope="col">No data (%)</th><th scope="col">CPDC</th><th scope="col">Evenness</th></tr></thead><tbody><tr><th scope="row">2003</th><td>2.75</td><td>62.39</td><td>27.52</td><td>10.09</td><td>0.00</td><td>0.112</td><td>0.635</td></tr><tr><th scope="row">2004</th><td>0.83</td><td>62.24</td><td>22.82</td><td>14.53</td><td>0.41</td><td>0.171</td><td>0.675</td></tr><tr><th scope="row">2005</th><td>0.97</td><td>48.55</td><td>27.01</td><td>24.12</td><td>0.32</td><td>0.319</td><td>0.769</td></tr><tr><th scope="row">2006</th><td>2.96</td><td>53.37</td><td>23.27</td><td>23.03</td><td>0.33</td><td>0.300</td><td>0.744</td></tr><tr><th scope="row">2007</th><td>1.60</td><td>61.10</td><td>21.71</td><td>16.77</td><td>0.42</td><td>0.203</td><td>0.689</td></tr><tr><th scope="row">2008</th><td>1.28</td><td>63.13</td><td>21.95</td><td>14.75</td><td>0.17</td><td>0.173</td><td>0.661</td></tr><tr><th scope="row">2009</th><td>1.41</td><td>64.71</td><td>21.22</td><td>13.80</td><td>0.27</td><td>0.161</td><td>0.649</td></tr><tr><th scope="row">2010</th><td>1.47</td><td>65.47</td><td>20.92</td><td>13.41</td><td>0.20</td><td>0.155</td><td>0.640</td></tr><tr><th scope="row">2011</th><td>1.65</td><td>66.70</td><td>20.86</td><td>12.25</td><td>0.19</td><td>0.140</td><td>0.625</td></tr><tr><th scope="row">2012</th><td>1.57</td><td>67.48</td><td>19.92</td><td>12.39</td><td>0.21</td><td>0.142</td><td>0.619</td></tr><tr><th scope="row">2013</th><td>1.64</td><td>66.70</td><td>19.36</td><td>13.72</td><td>0.22</td><td>0.159</td><td>0.630</td></tr><tr><th scope="row">2014</th><td>1.77</td><td>65.74</td><td>19.02</td><td>14.98</td><td>0.26</td><td>0.177</td><td>0.643</td></tr><tr><th scope="row">2015</th><td>2.10</td><td>63.68</td><td>20.02</td><td>16.07</td><td>0.23</td><td>0.192</td><td>0.661</td></tr><tr><th scope="row">2016</th><td>2.43</td><td>62.04</td><td>19.24</td><td>18.43</td><td>0.29</td><td>0.227</td><td>0.680</td></tr><tr><th scope="row">2017</th><td>3.30</td><td>60.53</td><td>19.53</td><td>19.60</td><td>0.34</td><td>0.245</td><td>0.694</td></tr><tr><th scope="row">2018</th><td>3.99</td><td>58.63</td><td>20.18</td><td>20.77</td><td>0.42</td><td>0.264</td><td>0.711</td></tr><tr><th scope="row">2019</th><td>4.43</td><td>57.28</td><td>19.98</td><td>22.47</td><td>0.27</td><td>0.291</td><td>0.716</td></tr><tr><th scope="row">2020</th><td>5.39</td><td>55.17</td><td>17.79</td><td>26.28</td><td>0.76</td><td>0.360</td><td>0.738</td></tr><tr><th scope="row">2021</th><td>6.57</td><td>52.06</td><td>17.42</td><td>28.68</td><td>1.84</td><td>0.413</td><td>0.776</td></tr><tr><th scope="row">2022</th><td>7.97</td><td>51.36</td><td>16.29</td><td>29.54</td><td>2.81</td><td>0.437</td><td>0.792</td></tr><tr><th scope="row">2023</th><td>9.60</td><td>47.31</td><td>15.30</td><td>33.60</td><td>3.79</td><td>0.537</td><td>0.816</td></tr><tr><th scope="row">2024</th><td>11.99</td><td>46.40</td><td>15.69</td><td>33.77</td><td>4.14</td><td>0.544</td><td>0.826</td></tr><tr><th scope="row">2025*</th><td>15.58</td><td>46.61</td><td>16.51</td><td>31.83</td><td>5.05</td><td>0.504</td><td>0.843</td></tr></tbody></table></div></details><details class="fold"><summary>Annual AI-family composition</summary><div class="table-scroll" tabindex="0"><table><thead><tr><th scope="col">Received year</th><th scope="col">ML (%)</th><th scope="col">DL (%)</th><th scope="col">GenAI (%)</th><th scope="col">Hybrid (%)</th></tr></thead><tbody><tr><th scope="row">2006</th><td>77.78</td><td>22.22</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2007</th><td>89.13</td><td>10.87</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2008</th><td>86.44</td><td>13.56</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2009</th><td>90.53</td><td>9.47</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2010</th><td>90.96</td><td>8.44</td><td>0.60</td><td>0.00</td></tr><tr><th scope="row">2011</th><td>83.90</td><td>15.79</td><td>0.31</td><td>0.00</td></tr><tr><th scope="row">2012</th><td>89.89</td><td>9.46</td><td>0.65</td><td>0.00</td></tr><tr><th scope="row">2013</th><td>89.07</td><td>10.22</td><td>0.53</td><td>0.18</td></tr><tr><th scope="row">2014</th><td>86.08</td><td>13.74</td><td>0.18</td><td>0.00</td></tr><tr><th scope="row">2015</th><td>87.35</td><td>12.30</td><td>0.35</td><td>0.00</td></tr><tr><th scope="row">2016</th><td>84.32</td><td>15.34</td><td>0.34</td><td>0.00</td></tr><tr><th scope="row">2017</th><td>78.78</td><td>20.80</td><td>0.42</td><td>0.00</td></tr><tr><th scope="row">2018</th><td>71.98</td><td>27.33</td><td>0.69</td><td>0.00</td></tr><tr><th scope="row">2019</th><td>66.62</td><td>33.12</td><td>0.26</td><td>0.00</td></tr><tr><th scope="row">2020</th><td>58.59</td><td>41.05</td><td>0.36</td><td>0.00</td></tr><tr><th scope="row">2021</th><td>55.54</td><td>43.64</td><td>0.75</td><td>0.07</td></tr><tr><th scope="row">2022</th><td>48.73</td><td>49.68</td><td>1.59</td><td>0.00</td></tr><tr><th scope="row">2023</th><td>45.99</td><td>50.80</td><td>3.10</td><td>0.11</td></tr><tr><th scope="row">2024</th><td>42.71</td><td>51.81</td><td>5.18</td><td>0.30</td></tr><tr><th scope="row">2025*</th><td>37.43</td><td>55.43</td><td>6.48</td><td>0.66</td></tr></tbody></table></div></details></details></section>
+
+          
+          <div class="report-bridge"><a href="publishing.html">Read Publishing Surveys</a></div></article>
+
+        
+        <aside class="lg:sticky lg:top-36 space-y-5">
+          
+          <nav aria-label="Part I outline" class="hidden lg:block bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate no-print">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-2.5 border-b border-botanical-border/70">
+              IN PART I · PLOS CORPUS
+            </div>
+            <ul class="space-y-0.5 text-[12.5px]">
+              <li>
+                <a href="#p1-sec-1" data-spy="p1-sec-1" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.1</span>Longitudinal Shifts
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p1-fig-1" data-spy="p1-fig-1" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 1 · Trends &amp; provenance
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p1-sec-2" data-spy="p1-sec-2" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.2</span>Era Shifts &amp; AI Link
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p1-fig-2" data-spy="p1-fig-2" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 2 · Eras &amp; quarterly CPDC
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p1-sec-3" data-spy="p1-sec-3" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.3</span>The Missing Measure
+                </a>
+              </li>
+              <li>
+                <a href="#p1-appendix" data-spy="p1-appendix" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  Table A1 · Era Summary
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          
+          <div class="bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-3 border-b border-botanical-border/70">
+              PART I · AT A GLANCE
+            </div>
+            <dl class="space-y-3 text-xs">
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Total PLOS articles</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-evergreen tabular-nums">353,810</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">AI-classified subset (2006–25*)</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-forest tabular-nums">14,507</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">2025* primary producers</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-evergreen tabular-nums">46.6%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">2025* data consumers</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-terracotta tabular-nums">31.8%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2">
+                <dt class="text-botanical-muted">2025* Shannon evenness</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-teal tabular-nums">0.843</dd>
+              </div>
+            </dl>
+          </div>
+
+          
+          <div class="bg-botanical-tint rounded-[10px] border border-botanical-border p-5 text-xs leading-relaxed text-botanical-prose print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-evergreen mb-2.5">
+              PART I · METHODOLOGICAL NOTES
+            </div>
+            <ul class="space-y-2.5 text-[11.5px] text-botanical-prose/95">
+              <li>
+                <strong class="text-botanical-evergreen">Incomplete 2025* records:</strong> PLOS literature counts for 2025 reflect partial-year indexing and are marked with an asterisk across all era summaries and charts.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">Non-causal compositional share:</strong> Declining primary-data proportions reflect relative shares rather than confirmed absolute reductions in primary data collection.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">CPDC definition:</strong> Consumer-to-Primary-Data-Contributor ratio measures the balance between articles relying solely on pre-existing data and those reporting primary data.
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div><div id="part-2-container" class="reportpart">
+
+      
+      <header class="mb-10 sm:mb-12">
+        <div class="max-w-4xl">
+          
+          <div class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-botanical-eyebrow mb-3.5">
+            <span class="w-6 h-[2px] bg-botanical-forest"></span>
+            <span>PART II · STAKEHOLDER SURVEYS (RESEARCHERS &amp; PUBLISHERS)</span>
+          </div>
+
+          
+          <h1 class="font-display font-bold text-3xl sm:text-[2.75rem] lg:text-[3.05rem] leading-[1.13] tracking-tight text-botanical-evergreen mb-5">Publishing Surveys</h1>
+
+          
+          <p class="report-headline">How AI Is Reshaping Research and Publishing: Perspectives from Researchers and Editors</p><p class="font-serif text-lg sm:text-[1.22rem] leading-[1.62] text-botanical-muted mb-6 max-w-3xl">
+            Complementary pilot surveys representing the starting point and endpoint of the scientific publication chain—41 researchers across 10 self-reported disciplinary categories and 19 journal professionals across 9 disciplines—illuminate rapid AI adoption, dual-sided competitive pressures, an editorial acceptance paradox, and feasible publishing safeguards.
+          </p>
+
+          
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 py-3.5 border-y border-botanical-border text-xs text-botanical-muted">
+            <span><strong class="font-semibold text-botanical-evergreen">Starting Point:</strong> 41 Researchers (10 Disciplinary Categories)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Publishing Endpoint:</strong> 19 Journal Editors (9 Disciplines)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Design:</strong> Exploratory Pilot Surveys</span>
+          </div>
+        </div>
+
+        
+        <div class="mt-7 bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+          <div class="report-metrics grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-botanical-border/75">
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-forest">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-forest tabular-nums tracking-tight">
+                90.2%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Researchers already using or trying AI-based methods (<span class="font-mono">37/41</span>; <span class="font-mono">3/4</span> non-users rated interest <span class="font-mono">4/5</span>)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-teal">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                81.1%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Top researcher driver: lower analytical barriers via generative AI (<span class="font-mono">30/37</span>)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-amber">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                78.0% <span class="text-sm font-sans font-normal text-botanical-muted">/</span> 84.2%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Researchers vs. editors expecting a disadvantage for non-AI work
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-terracotta">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-terracotta tabular-nums tracking-tight">
+                10.5%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Editors considering AI manuscripts more likely to receive final acceptance (<span class="font-mono">2/19</span>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <div class="editorial-grid grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,820px)_1fr] gap-8 xl:gap-11 items-start">
+
+        
+        <article class="min-w-0 space-y-12">
+
+          
+          <section id="p2-sec-1" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION II.1 · STARTING POINT OF THE PUBLICATION CHAIN (n = 41)
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                The Researcher Perspective: Rapid Adoption and Drivers
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p class="editorial-dropcap">
+                At the starting point of the publication chain, AI adoption across the pilot sample of 41 researchers spanning 10 self-reported disciplinary categories is already widespread: 90.2% (37 of 41) were using or trying AI-based methods, divided evenly between routine use (18/41, 43.9%) and early-stage use (18/41, 43.9%), alongside one respondent just starting (2.4%). Even among the four respondents with no prior use (9.8%), three (75.0%) rated their interest in adoption at four out of five. Nearly half of all respondents (46.3%, 19/41) estimated that at least half of the research groups in their fields currently use AI (<a href="#p2-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1a,b</a>).
+              </p>
+              <p>
+                Among the 37 users and experimenters, falling technical friction stood out as the leading catalyst: 81.1% (30/37) rated lower analytical barriers via generative AI at four or five out of five. Substantive research motivations followed closely—tackling complex, high-dimensional problems (70.3%), fostering interdisciplinary collaboration (59.5%), and gaining new insights and mechanistic understanding (56.8%)—alongside practical infrastructure and efficiency tailwinds such as public data availability (48.6%), access to high-performance computing (48.6%), lower research costs (45.9%), and faster publication cycles (43.2%). Overt external incentives, including perceptions that high-impact journals (29.7%) or formal research evaluation (16.2%) favour AI, ranked lowest (<a href="#p2-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1c</a>).
+              </p>
+            </div>
+
+            
+            <figure id="p2-fig-1" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 1 (Survey) <span class="text-botanical-border font-normal mx-1">|</span> AI adoption and its drivers
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  Researchers: n = 41; adoption drivers: n = 37
+                </p>
+              </figcaption>
+
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-7 mb-7 border-b border-botanical-border/60">
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-3">
+                    A <span class="font-semibold ml-1">Personal adoption</span>
+                  </h3>
+                  <div class="relative w-full h-[210px]">
+                    <canvas id="fig3-a"></canvas>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 mt-4 pt-3 border-t border-botanical-border/50 text-xs text-botanical-prose">
+                    <div class="flex items-center gap-2">
+                      <span class="w-3 h-3 rounded-[2px] bg-[#16583d] shrink-0"></span>
+                      <span>Routine use · <span class="font-mono">18 (43.9%)</span></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="w-3 h-3 rounded-[2px] bg-[#d9822b] shrink-0"></span>
+                      <span>Early-stage use · <span class="font-mono">18 (43.9%)</span></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="w-3 h-3 rounded-[2px] bg-[#4ea17c] shrink-0"></span>
+                      <span>Just starting · <span class="font-mono">1 (2.4%)</span></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="w-3 h-3 rounded-[2px] bg-[#9b6b8e] shrink-0"></span>
+                      <span>Never used · <span class="font-mono">4 (9.8%)</span></span>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-3">
+                    B <span class="font-semibold ml-1">Estimated adoption in the field</span>
+                  </h3>
+                  <div class="relative w-full h-[235px]">
+                    <canvas id="fig3-b"></canvas>
+                  </div>
+                  <div class="flex items-center justify-center gap-5 mt-3 text-xs text-botanical-prose">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#2d7d82]"></span>Responses</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#d9822b]"></span>Cumulative</span>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div>
+                <div class="flex items-baseline justify-between gap-2 mb-2">
+                  <h3 class="font-sans font-bold text-[13.5px] text-botanical-evergreen">
+                    C <span class="font-semibold ml-1">Drivers rated 4–5: proportions and 95% intervals</span>
+                  </h3>
+                </div>
+                <div class="text-[11px] font-medium text-botanical-muted mb-1 flex justify-between px-1">
+                  <span>Driver</span>
+                  <span class="font-mono">Share (4–5)</span>
+                </div>
+                <div class="relative w-full h-[435px] sm:h-[450px]">
+                  <canvas id="fig3-c"></canvas>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-4 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                B: estimated share of research groups using AI. C: two-sided 95% Wilson score intervals (z = 1.96); descriptive pilot sample; items rated independently.
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p2-sec-2" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION II.2 · DUAL-PERSPECTIVE TENSIONS (n = 19 EDITORS &amp; n = 41 RESEARCHERS)
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                The Publisher &amp; Editor Perspective: Dual-Sided Pressures, Acceptance Paradox, and Quality Concerns
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Comparing researchers and journal professionals reveals the same competitive pressure felt from opposite ends of the publication chain. Among researchers, 78.0% (32/41) expected peers who do not adopt AI to face a disadvantage in academic competition. Among the 19 journal professionals across nine disciplines, 78.9% perceived at least moderate changes in research paradigms associated with AI-augmented research, and 84.2% (16/19) perceived a publication disadvantage for non-AI studies (<a href="#p2-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2a</a>).
+              </p>
+              <p>
+                Yet editorial gatekeeping reveals a clear acceptance paradox: only two of the 19 editors (10.5%) considered AI-augmented manuscripts more likely to receive final acceptance. Core scientific evaluation gates remained decisive, with reproducibility and genuine scientific contribution each rated very important or essential by 78.9% of journal professionals. Meanwhile, although majorities of both researchers (58.5%) and editors (52.6%) expected positive effects on long-term disciplinary sustainability—alongside notable neutral (24.4% / 26.3%) and unsure (14.6% / 15.8%) shares, and very few outright negatives (2.4% / 5.3%; <a href="#p2-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2b</a>)—respondents consistently warned of three structural scientific quality risks.
+              </p>
+            </div>
+
+            
+            <div class="bg-white rounded-[10px] border border-botanical-border p-4 sm:p-5 shadow-plate print-avoid">
+              <div class="text-[10.5px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-3">
+                Editorial Desk Pulse · Journal Professionals (n = 19, 9 Disciplines)
+              </div>
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="border-l-2 border-botanical-forest pl-3">
+                  <div class="font-mono font-semibold text-xl text-botanical-evergreen tabular-nums">78.9%</div>
+                  <div class="text-[11.5px] text-botanical-muted leading-snug mt-0.5">Paradigm change perceived (≥ moderate)</div>
+                </div>
+                <div class="border-l-2 border-botanical-terracotta pl-3">
+                  <div class="font-mono font-semibold text-xl text-botanical-terracotta tabular-nums">84.2%</div>
+                  <div class="text-[11.5px] text-botanical-muted leading-snug mt-0.5">Non-AI publication disadvantage</div>
+                </div>
+                <div class="border-l-2 border-botanical-amber pl-3">
+                  <div class="font-mono font-semibold text-xl text-botanical-evergreen tabular-nums">10.5% <span class="text-[11px] font-normal text-botanical-muted">(2/19)</span></div>
+                  <div class="text-[11.5px] text-botanical-muted leading-snug mt-0.5">Higher final acceptance odds for AI</div>
+                </div>
+                <div class="border-l-2 border-botanical-teal pl-3">
+                  <div class="font-mono font-semibold text-xl text-botanical-forest tabular-nums">78.9%</div>
+                  <div class="text-[11.5px] text-botanical-muted leading-snug mt-0.5">Reproducibility &amp; scientific contribution essential</div>
+                </div>
+              </div>
+            </div>
+
+            
+            <figure id="p2-fig-2" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 2 (Survey) <span class="text-botanical-border font-normal mx-1">|</span> Perceived competition and sustainability
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  Researchers: n = 41; editors: n = 19
+                </p>
+              </figcaption>
+
+              
+              <div class="pb-6 mb-6 border-b border-botanical-border/60">
+                <h3 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-2">
+                  A <span class="font-semibold ml-1">Disadvantage associated with non-adoption</span>
+                </h3>
+                <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-xs text-botanical-prose mb-3">
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#16583d]"></span>Disadvantage</span>
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#d9822b]"></span>No disadvantage</span>
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#4ea17c]"></span>Unsure</span>
+                </div>
+                <div class="relative w-full h-[145px] sm:h-[150px]">
+                  <canvas id="fig4-a"></canvas>
+                </div>
+                <p class="text-[11.5px] text-botanical-muted mt-2">
+                  All affirmative responses combined; survey questions differ between academic competition (researchers) and publication competition (editors).
+                </p>
+              </div>
+
+              
+              <div>
+                <h3 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-2">
+                  B <span class="font-semibold ml-1">Expected effects on long-term sustainability</span>
+                </h3>
+                <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-xs text-botanical-prose mb-3">
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#16583d]"></span>Positive</span>
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#d9822b]"></span>Neutral</span>
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#4ea17c]"></span>Negative</span>
+                  <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#9b6b8e]"></span>Unsure</span>
+                </div>
+                <div class="relative w-full h-[145px] sm:h-[150px]">
+                  <canvas id="fig4-b"></canvas>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-4 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                Responses (%) · segment labels: n. Positive, neutral, negative, and unsure are preserved as four distinct categories (negative n = 1 for both groups; hover segments for exact counts).
+              </p>
+            </figure>
+
+            
+            <div class="bg-botanical-tint/85 rounded-[10px] border border-botanical-border p-5 print-avoid">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-terracotta mb-3.5">
+                Recurring Scientific Quality Concerns Raised by Respondents
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white rounded-lg border border-botanical-border/90 p-4">
+                  <div class="font-mono text-[10.5px] font-semibold text-botanical-terracotta mb-1">01 · DATA INTEGRITY</div>
+                  <h4 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-1.5">Data Quality &amp; Bias</h4>
+                  <p class="text-xs text-botanical-muted leading-relaxed">
+                    Risk of misleading conclusions when algorithmic models amplify poor-quality, biased, or repeatedly mined secondary datasets.
+                  </p>
+                </div>
+                <div class="bg-white rounded-lg border border-botanical-border/90 p-4">
+                  <div class="font-mono text-[10.5px] font-semibold text-botanical-terracotta mb-1">02 · EPISTEMIC DEPTH</div>
+                  <h4 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-1.5">Theoretical Erosion</h4>
+                  <p class="text-xs text-botanical-muted leading-relaxed">
+                    Concern that predictive performance gains may come at the cost of weaker theoretical framing and mechanistic understanding.
+                  </p>
+                </div>
+                <div class="bg-white rounded-lg border border-botanical-border/90 p-4">
+                  <div class="font-mono text-[10.5px] font-semibold text-botanical-terracotta mb-1">03 · METHOD DIVERSITY</div>
+                  <h4 class="font-sans font-bold text-[13.5px] text-botanical-evergreen mb-1.5">Marginalization of Traditional Methods</h4>
+                  <p class="text-xs text-botanical-muted leading-relaxed">
+                    Pressure on slower, scientifically valuable observational, field, and experimental workflows that remain essential for empirical grounding.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+          <section id="p2-sec-3" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION II.3 · PUBLISHING ENDPOINT GOVERNANCE (n = 19 EDITORS)
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                Governance at the Publishing Endpoint: Feasibility of Editorial Safeguards
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Evaluating ten candidate safeguards highlights a clear divide between transparency verification and active portfolio intervention (<a href="#p2-fig-3" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 3</a>). Under the strict feasibility threshold (<strong class="font-sans font-semibold text-botanical-evergreen">F+</strong>: feasible or highly feasible), disclosure norms ranked first: 63.2% (12/19) for data, code, and model disclosure, and 57.9% (11/19) for standardised AI-use disclosure. Evidence-informed policy revision, external or empirical validation, and reproducibility checks each drew 52.6% F+ (10/19), with reproducibility checks earning the broadest at-least-moderately-feasible (<strong class="font-sans font-semibold text-botanical-evergreen">M+</strong>) consensus at 89.5% (17/19).
+              </p>
+              <p>
+                Monitoring journal-level AI use and structural imbalances received more qualified support: 84.2% M+ (16/19), including 42.1% F+ (8/19). By contrast, measures that require editorial offices to actively rebalance research streams ranked lowest—31.6% F+ for supporting underrepresented research and 21.1% F+ for balancing AI and non-AI research—and attracted the largest shares of “not sure” responses (up to 5 of 19 editors). While journals appear positioned to enforce disclosure and verification standards, broader field-level balance likely depends on shared provenance metrics and upstream institutional incentives.
+              </p>
+            </div>
+
+            
+            <figure id="p2-fig-3" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-4 border-b border-botanical-border/70 flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+                <div>
+                  <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                    Figure 3 (Survey) <span class="text-botanical-border font-normal mx-1">|</span> Feasibility of potential safeguards
+                  </div>
+                  <p class="text-xs text-botanical-muted mt-1">
+                    Editors: n = 19 per item; ranked by feasible + highly feasible
+                  </p>
+                </div>
+
+                
+                <div class="inline-flex items-center p-0.5 rounded-full bg-botanical-canvas border border-botanical-border self-start shrink-0 no-print">
+                  <button type="button" id="btn-fig5-full" class="px-3 py-1 rounded-full text-[11.5px] font-semibold transition bg-botanical-forest text-white shadow-sm">
+                    Full Distribution + F+/M+
+                  </button>
+                  <button type="button" id="btn-fig5-comp" class="px-3 py-1 rounded-full text-[11.5px] font-semibold transition text-botanical-evergreen hover:text-botanical-forest">
+                    Compare F+ vs. M+
+                  </button>
+                </div>
+              </figcaption>
+
+              
+              <div id="fig5-legend-full" class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-botanical-prose mb-3">
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#123f2f]"></span>Not at all feasible</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#d9822b]"></span>Slightly feasible</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#4ea17c]"></span>Moderately feasible</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#9b6b8e]"></span>Feasible</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#6e5d96]"></span>Highly feasible</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#3c8d8a]"></span>Not sure</span>
+              </div>
+
+              <div id="fig5-legend-comp" class="hidden flex flex-wrap items-center gap-x-5 gap-y-1.5 text-xs text-botanical-prose mb-3">
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#16583d]"></span>F+ (Feasible + Highly feasible)</span>
+                <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-[2px] bg-[#4ea17c]"></span>M+ (At least moderately feasible)</span>
+              </div>
+
+              
+              <div id="fig5-col-headers" class="flex items-center justify-between text-[11px] font-semibold text-botanical-muted px-1 mb-1">
+                <span>Measure</span>
+                <span class="font-mono text-botanical-evergreen pr-1 hidden sm:inline">F+ / M+</span>
+              </div>
+
+              
+              <div class="relative w-full h-[435px] sm:h-[460px]">
+                <canvas id="fig5-canvas"></canvas>
+              </div>
+
+              <p id="fig5-footnote" class="text-[11.5px] text-botanical-muted mt-4 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                F+ = feasible or highly feasible; M+ = at least moderately feasible. Denominator: all 19 editors (including not sure). Segment labels: counts (n).
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p2-appendix" class="scroll-mt-36">
+            <details class="group bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+              <summary class="px-5 sm:px-6 py-4 flex items-center justify-between gap-4 cursor-pointer select-none hover:bg-botanical-soft transition">
+                <div>
+                  <div class="text-[10.5px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow">
+                    PART II APPENDIX · VERIFIED SURVEY TABLES
+                  </div>
+                  <h2 class="font-display font-bold text-lg text-botanical-evergreen mt-0.5">
+                    Tables A2–A4 · Drivers, Competition, Sustainability &amp; Safeguards
+                  </h2>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-botanical-canvas border border-botanical-border text-botanical-evergreen group-open:bg-botanical-forest group-open:text-white group-open:border-botanical-forest transition inline-flex items-center gap-1.5 shrink-0">
+                  <span class="group-open:hidden">Show Tables</span>
+                  <span class="hidden group-open:inline">Hide Tables</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+
+              <div class="px-5 sm:px-6 pb-6 pt-4 border-t border-botanical-border space-y-7 bg-white">
+                
+                <div>
+                  <h3 class="text-xs font-semibold uppercase tracking-[0.11em] text-botanical-eyebrow mb-2.5">
+                    Table A2 · Researcher Adoption Drivers Rated 4–5/5 with 95% Wilson CIs (n = 37)
+                  </h3>
+                  <div class="overflow-x-auto rounded-lg border border-botanical-border">
+                    <table class="min-w-full text-xs text-left border-collapse tabular-nums">
+                      <thead class="bg-botanical-tint text-botanical-evergreen font-semibold border-b border-botanical-border">
+                        <tr>
+                          <th class="px-3 py-2.5">Rank</th>
+                          <th class="px-3 py-2.5">Adoption Driver</th>
+                          <th class="px-3 py-2.5 text-right">n / 37</th>
+                          <th class="px-3 py-2.5 text-right">Proportion (%)</th>
+                          <th class="px-3 py-2.5 text-right">95% Wilson CI</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody-drivers" class="divide-y divide-botanical-border/60 text-botanical-prose"><tr><td>1</td><td>Lower analytical barriers via generative AI</td><td>30 / 37</td><td>81.1%</td><td>[65.8%, 90.5%]</td></tr><tr><td>2</td><td>Complex, high-dimensional problems</td><td>26 / 37</td><td>70.3%</td><td>[54.2%, 82.5%]</td></tr><tr><td>3</td><td>Interdisciplinary collaboration</td><td>22 / 37</td><td>59.5%</td><td>[43.5%, 73.7%]</td></tr><tr><td>4</td><td>Insights and mechanistic understanding</td><td>21 / 37</td><td>56.8%</td><td>[40.9%, 71.3%]</td></tr><tr><td>5</td><td>Public data availability</td><td>18 / 37</td><td>48.6%</td><td>[33.5%, 64.1%]</td></tr><tr><td>6</td><td>Access to high-performance computing</td><td>18 / 37</td><td>48.6%</td><td>[33.5%, 64.1%]</td></tr><tr><td>7</td><td>Lower research costs</td><td>17 / 37</td><td>46.0%</td><td>[31.0%, 61.6%]</td></tr><tr><td>8</td><td>Faster publication</td><td>16 / 37</td><td>43.2%</td><td>[28.7%, 59.1%]</td></tr><tr><td>9</td><td>Student interest in algorithmic research</td><td>15 / 37</td><td>40.5%</td><td>[26.4%, 56.5%]</td></tr><tr><td>10</td><td>Funding support</td><td>14 / 37</td><td>37.8%</td><td>[24.1%, 53.9%]</td></tr><tr><td>11</td><td>High-impact journals favour AI</td><td>11 / 37</td><td>29.7%</td><td>[17.5%, 45.8%]</td></tr><tr><td>12</td><td>Research evaluation favours AI</td><td>6 / 37</td><td>16.2%</td><td>[7.7%, 31.1%]</td></tr></tbody>
+                    </table>
+                  </div>
+                </div>
+
+                
+                <div>
+                  <h3 class="text-xs font-semibold uppercase tracking-[0.11em] text-botanical-eyebrow mb-2.5">
+                    Table A3 · Perceived Disadvantage &amp; Long-Term Sustainability (Researchers n = 41; Editors n = 19)
+                  </h3>
+                  <div class="overflow-x-auto rounded-lg border border-botanical-border">
+                    <table class="min-w-full text-xs text-left border-collapse tabular-nums">
+                      <thead class="bg-botanical-tint text-botanical-evergreen font-semibold border-b border-botanical-border">
+                        <tr>
+                          <th class="px-3 py-2.5">Dimension / Group</th>
+                          <th class="px-3 py-2.5 text-right">Category 1</th>
+                          <th class="px-3 py-2.5 text-right">Category 2</th>
+                          <th class="px-3 py-2.5 text-right">Category 3</th>
+                          <th class="px-3 py-2.5 text-right">Category 4</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-botanical-border/60 text-botanical-prose font-mono">
+                        <tr class="hover:bg-botanical-soft">
+                          <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">Disadvantage — Researchers (n=41)</td>
+                          <td class="px-3 py-2 text-right">Disadv.: 32 (78.0%)</td>
+                          <td class="px-3 py-2 text-right">No disadv.: 7 (17.1%)</td>
+                          <td class="px-3 py-2 text-right">Unsure: 2 (4.9%)</td>
+                          <td class="px-3 py-2 text-right text-botanical-muted">—</td>
+                        </tr>
+                        <tr class="hover:bg-botanical-soft">
+                          <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">Disadvantage — Editors (n=19)</td>
+                          <td class="px-3 py-2 text-right">Disadv.: 16 (84.2%)</td>
+                          <td class="px-3 py-2 text-right">No disadv.: 2 (10.5%)</td>
+                          <td class="px-3 py-2 text-right">Unsure: 1 (5.3%)</td>
+                          <td class="px-3 py-2 text-right text-botanical-muted">—</td>
+                        </tr>
+                        <tr class="hover:bg-botanical-soft">
+                          <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">Sustainability — Researchers (n=41)</td>
+                          <td class="px-3 py-2 text-right">Pos.: 24 (58.5%)</td>
+                          <td class="px-3 py-2 text-right">Neu.: 10 (24.4%)</td>
+                          <td class="px-3 py-2 text-right">Neg.: 1 (2.4%)</td>
+                          <td class="px-3 py-2 text-right">Uns.: 6 (14.6%)</td>
+                        </tr>
+                        <tr class="hover:bg-botanical-soft">
+                          <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">Sustainability — Editors (n=19)</td>
+                          <td class="px-3 py-2 text-right">Pos.: 10 (52.6%)</td>
+                          <td class="px-3 py-2 text-right">Neu.: 5 (26.3%)</td>
+                          <td class="px-3 py-2 text-right">Neg.: 1 (5.3%)</td>
+                          <td class="px-3 py-2 text-right">Uns.: 3 (15.8%)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                
+                <div>
+                  <h3 class="text-xs font-semibold uppercase tracking-[0.11em] text-botanical-eyebrow mb-2.5">
+                    Table A4 · Editorial Safeguards Feasibility Ratings (n = 19 Editors per Item)
+                  </h3>
+                  <div class="overflow-x-auto rounded-lg border border-botanical-border">
+                    <table class="min-w-full text-xs text-left border-collapse tabular-nums">
+                      <thead class="bg-botanical-tint text-botanical-evergreen font-semibold border-b border-botanical-border">
+                        <tr>
+                          <th class="px-3 py-2.5">Safeguard Measure</th>
+                          <th class="px-2 py-2.5 text-right">Not feas.</th>
+                          <th class="px-2 py-2.5 text-right">Slightly</th>
+                          <th class="px-2 py-2.5 text-right">Mod.</th>
+                          <th class="px-2 py-2.5 text-right">Feasible</th>
+                          <th class="px-2 py-2.5 text-right">Highly</th>
+                          <th class="px-2 py-2.5 text-right">Unsure</th>
+                          <th class="px-2.5 py-2.5 text-right">F+ (%)</th>
+                          <th class="px-2.5 py-2.5 text-right">M+ (%)</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody-safeguards" class="divide-y divide-botanical-border/60 text-botanical-prose"><tr><td>Data, code and model disclosure</td><td>0</td><td>2</td><td>4</td><td>6</td><td>6</td><td>1</td><td>63.2%</td><td>84.2%</td></tr><tr><td>Standardised AI-use disclosure</td><td>0</td><td>1</td><td>4</td><td>4</td><td>7</td><td>3</td><td>57.9%</td><td>78.9%</td></tr><tr><td>Evidence-informed policy revision</td><td>0</td><td>2</td><td>6</td><td>6</td><td>4</td><td>1</td><td>52.6%</td><td>84.2%</td></tr><tr><td>External or empirical validation</td><td>0</td><td>2</td><td>6</td><td>4</td><td>6</td><td>1</td><td>52.6%</td><td>84.2%</td></tr><tr><td>Reproducibility checks</td><td>0</td><td>1</td><td>7</td><td>5</td><td>5</td><td>1</td><td>52.6%</td><td>89.5%</td></tr><tr><td>AI and domain expert review</td><td>0</td><td>3</td><td>5</td><td>5</td><td>4</td><td>2</td><td>47.4%</td><td>73.7%</td></tr><tr><td>AI-independent scientific evaluation</td><td>0</td><td>4</td><td>3</td><td>4</td><td>4</td><td>4</td><td>42.1%</td><td>57.9%</td></tr><tr><td>Monitor AI use and imbalances</td><td>0</td><td>2</td><td>8</td><td>6</td><td>2</td><td>1</td><td>42.1%</td><td>84.2%</td></tr><tr><td>Support underrepresented research</td><td>1</td><td>3</td><td>6</td><td>3</td><td>3</td><td>3</td><td>31.6%</td><td>63.2%</td></tr><tr><td>Balance AI and non-AI research</td><td>0</td><td>1</td><td>9</td><td>3</td><td>1</td><td>5</td><td>21.1%</td><td>68.4%</td></tr></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          
+          <div class="report-bridge"><a href="plos.html">Read Data Trend</a></div></article>
+
+        
+        <aside class="lg:sticky lg:top-36 space-y-5">
+          
+          <nav aria-label="Part II outline" class="hidden lg:block bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate no-print">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-2.5 border-b border-botanical-border/70">
+              IN PART II · SURVEYS
+            </div>
+            <ul class="space-y-0.5 text-[12.5px]">
+              <li>
+                <a href="#p2-sec-1" data-spy="p2-sec-1" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">II.1</span>Researcher Adoption
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p2-fig-1" data-spy="p2-fig-1" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 1 · Adoption &amp; drivers
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p2-sec-2" data-spy="p2-sec-2" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">II.2</span>Pressures &amp; Paradox
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p2-fig-2" data-spy="p2-fig-2" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 2 · Competition &amp; outlook
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p2-sec-3" data-spy="p2-sec-3" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">II.3</span>Editorial Safeguards
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p2-fig-3" data-spy="p2-fig-3" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 3 · Safeguard feasibility
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p2-appendix" data-spy="p2-appendix" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  Tables A2–A4 · Survey Data
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          
+          <div class="bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-3 border-b border-botanical-border/70">
+              PART II · AT A GLANCE
+            </div>
+            <dl class="space-y-3 text-xs">
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Researcher AI adoption (37/41)</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-forest tabular-nums">90.2%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Top driver: lower GenAI barriers</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-forest tabular-nums">81.1%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Editor non-AI disadvantage</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-terracotta tabular-nums">84.2%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Top safeguard: data/code/model (F+)</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-evergreen tabular-nums">63.2%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2">
+                <dt class="text-botanical-muted">Broadest M+ consensus: reproducibility</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-teal tabular-nums">89.5%</dd>
+              </div>
+            </dl>
+          </div>
+
+          
+          <div class="bg-botanical-tint rounded-[10px] border border-botanical-border p-5 text-xs leading-relaxed text-botanical-prose print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-evergreen mb-2.5">
+              PART II · METHODOLOGICAL NOTES
+            </div>
+            <ul class="space-y-2.5 text-[11.5px] text-botanical-prose/95">
+              <li>
+                <strong class="text-botanical-evergreen">Exploratory convenience samples:</strong> Both surveys (41 researchers across 10 self-reported categories; 19 journal editors across 9 disciplines) are small, network-drawn pilots intended to identify directional signals rather than representative population estimates.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">Distinct competition contexts:</strong> Researchers evaluated disadvantages in <em>academic competition</em>, whereas editors evaluated disadvantages in <em>publication competition</em>.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">Feasibility thresholds (F+ / M+):</strong> F+ sums <em>Feasible</em> and <em>Highly feasible</em>; M+ adds <em>Moderately feasible</em>. Both use all 19 editors as denominator, including “not sure” responses.
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div></div></main><footer class="site-footer"><div class="frame"><a class="brand" href="index.html" aria-label="AI and Science home"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>AI <em>&amp;</em> Science</a><span>How AI Is Transforming Science</span><a href="#main">Back to top</a></div></footer><script defer src="chart-assets/chart.umd.js"></script><script defer src="report-charts.js"></script><script defer src="report-ui.js"></script><script defer src="plos-data.js"></script><script defer src="trends.js"></script></body></html>

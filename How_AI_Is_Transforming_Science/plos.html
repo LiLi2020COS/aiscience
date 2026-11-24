@@ -1,0 +1,464 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbfaf7"><title>Data Trend | AI &amp; Science</title><meta name="description" content="Data Trend — evidence on AI methods, research data and editorial practice."><link rel="icon" href="art/icon.svg"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="report-utilities.css"><link rel="stylesheet" href="report.css"></head><body><a class="skip" href="#main">Skip to content</a><header class="mast"><div class="frame mast-inner"><a class="brand" href="index.html" aria-label="AI and Science home"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>AI <em>&amp;</em> Science</a><nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="plos.html" aria-current="page">Data Trend</a><a href="publishing.html">Publishing Surveys</a><a href="team.html">Team</a></nav></div></header><main id="main" class="frame"><div class="report-tools"><label class="jump">Contents <select id="jump"><option value="">Choose a section</option><option value="p1-sec-1">Data Trend · Annual trends</option><option value="p1-sec-2">Data Trend · Era comparisons</option><option value="p1-sec-3">Data Trend · Empirical contribution</option><option value="p1-appendix">Data Trend · Appendix A1</option></select></label></div><div class="research-report"><div id="part-1-container" class="reportpart">
+
+      
+      <header class="mb-10 sm:mb-12">
+        <div class="max-w-4xl">
+          
+          <div class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-botanical-eyebrow mb-3.5">
+            <span class="w-6 h-[2px] bg-botanical-forest"></span>
+            <span>PART I · EMPIRICAL LITERATURE ANALYSIS (PLOS CORPUS)</span>
+          </div>
+
+          
+          <h1 class="data-trend-title font-display font-bold text-3xl sm:text-[2.75rem] lg:text-[3.15rem] leading-[1.13] tracking-tight text-botanical-evergreen mb-5">Data Trend</h1>
+
+          
+          <p class="report-headline">AI Is Reshaping How Science Is Conducted</p><p class="font-serif text-lg sm:text-[1.22rem] leading-[1.62] text-botanical-muted mb-6 max-w-3xl">
+            An empirical analysis of 353,810 PLOS articles received between 2003 and 2025—predominantly in clinical medicine—traces the rise of AI-driven workflows, shifting primary-versus-secondary data provenance, and widening structural ratios across three methodological eras.
+          </p>
+
+          
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 py-3.5 border-y border-botanical-border text-xs text-botanical-muted">
+            <span><strong class="font-semibold text-botanical-evergreen">Scope:</strong> 353,810 PLOS Articles (AI Subset: <span class="font-mono">N = 14,507</span>)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Period:</strong> <span class="font-mono">2003–2025*</span> (2025 incomplete)</span>
+            <span class="hidden sm:inline text-botanical-border" aria-hidden="true">|</span>
+            <span><strong class="font-semibold text-botanical-evergreen">Methodological Eras:</strong> ML, DL, GenAI*</span>
+          </div>
+        </div>
+
+        
+        <div class="mt-7 bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+          <div class="report-metrics grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-botanical-border/75">
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-forest">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                66.0% → 46.8%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Primary-data article share from ML to GenAI* era (<span class="font-mono">N = 353,810</span>)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-amber">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-evergreen tabular-nums tracking-tight">
+                13.7% → 33.5%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Data-consumer share relying on previously collected data
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-teal">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-forest tabular-nums tracking-tight">
+                1.6% → 11.3%
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                AI-method article share by era (reaching <span class="font-mono">15.6%</span> in incomplete 2025*)
+              </p>
+            </div>
+            
+            <div class="p-5 border-t-[3px] border-t-botanical-terracotta">
+              <div class="font-mono font-semibold text-xl sm:text-2xl text-botanical-terracotta tabular-nums tracking-tight">
+                0.453 <span class="text-sm font-sans font-normal text-botanical-muted">vs.</span> 1.464
+              </div>
+              <p class="text-xs text-botanical-muted mt-1.5 leading-relaxed">
+                Mean quarterly CPDC in GenAI* era: Non-AI vs. AI (<span class="font-mono">*** p &lt; .001</span>)
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <div class="editorial-grid grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,820px)_1fr] gap-8 xl:gap-11 items-start">
+
+        
+        <article class="min-w-0 space-y-12">
+
+          
+          <section id="p1-sec-1" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.1 · TWENTY-THREE YEARS OF PUBLISHED ARTICLES
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                Longitudinal Shifts in AI Adoption and Data Provenance
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p class="editorial-dropcap">
+                Among 353,810 PLOS articles received between 2003 and 2025—predominantly in clinical medicine—the proportion reporting primary data fell from about 66% in the machine-learning era (66.0%) to under 47% in the generative-AI era (46.8%, and 46.6% in incomplete 2025* records). Over the same twenty-three-year span, the share relying on previously collected data rose from below 14% (13.7%) to almost 34% (33.5%, peaking at 33.8% in 2024), while the share identified as AI-driven increased from under 2% (1.6%) to over 11% (11.3%), reaching 15.6% in incomplete 2025* (<a href="#p1-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1a–c</a>).
+              </p>
+              <p>
+                Within the 14,507 articles identified as using AI methods since 2006, methodological composition also transformed: classical machine learning declined from roughly 86%–91% during 2007–2013 to 37.4% in 2025*, overtaken by deep learning (55.4%) and a fast-emerging wave of generative AI (6.5%) and hybrid methods (0.7%). Simultaneously, structural indicators tracking the balance between data reuse and original collection—both the consumer-to-primary-data-contributor ratio (CPDC) and normalized Shannon evenness—climbed steadily after 2012, reaching 0.544 in 2024 (0.504 in 2025*) and 0.843 in 2025*, respectively (<a href="#p1-fig-1" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 1d</a>).
+              </p>
+            </div>
+
+            
+            <div class="bg-botanical-tint border-l-4 border-botanical-forest rounded-r-[10px] px-5 py-4 print-avoid">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.12em] text-botanical-evergreen mb-1.5">
+                Interpretive Caveat · Non-Causal Compositional Signal
+              </div>
+              <p class="font-serif text-[0.96rem] leading-[1.7] text-botanical-prose">
+                These estimates do not mean that AI is displacing primary-data-based research. Changes in journal coverage, article types, research practices, or classification performance could each produce such trends, and a smaller proportion of papers reporting primary data does not necessarily mean less data is being collected, since growth in data-reuse studies can dilute primary-data share without coming at the expense of primary collection. Expanding to a larger corpus improves precision only when underlying classifications are rigorously validated.
+              </p>
+            </div>
+
+            
+            <figure id="p1-fig-1" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 1 <span class="text-botanical-border font-normal mx-1">|</span> Longitudinal trends in AI methods and data provenance
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  PLOS corpus: N = 353,810 articles (2003–2025*; 2025 incomplete); AI subset: N = 14,507 (2006–2025*)
+                </p>
+              </figcaption>
+
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    A <span class="font-semibold ml-1">Articles using AI methods (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-botanical-forest"></span>AI-method share</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#f3f8f5] border border-botanical-border"></span>ML</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#f7f6ee] border border-botanical-border"></span>DL</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#faf2ef] border border-botanical-border"></span>GenAI*</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-a"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    B <span class="font-semibold ml-1">AI-family composition (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>ML</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#2d7d82]"></span>DL</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>GenAI</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#4ea17c]"></span>Hybrid</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-b"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    C <span class="font-semibold ml-1">Share of classified articles by data role (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-3.5 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>Primary producers</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#4ea17c]"></span>Mixotrophs</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#d9822b]"></span>Data consumers</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#9db2a5]"></span>No data</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-c"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    D <span class="font-semibold ml-1">Structural balance: CPDC ratio and Shannon evenness</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>CPDC ratio (left)</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#123f2f]"></span>Shannon evenness (right)</span>
+                  </div>
+                  <div class="relative w-full h-[230px]">
+                    <canvas id="fig1-d"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-5 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                Received year periods: ML (2003–2014), DL (2015–2022), GenAI* (2023–2025*; 2025 incomplete). CPDC = Consumer-to-Primary-Data-Contributor ratio.
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p1-sec-2" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.2 · METHODOLOGICAL ERAS &amp; MATCHED QUARTERS
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                Era-Level Shifts and Within-Period AI Association
+              </h2>
+            </div>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Aggregating the corpus across three methodological eras—the Machine Learning era (ML: 2003–2014, <span class="font-mono text-[0.92em]">n = 142,803</span>), the Deep Learning era (DL: 2015–2022, <span class="font-mono text-[0.92em]">n = 166,917</span>), and the Generative AI era (GenAI*: 2023–2025*, <span class="font-mono text-[0.92em]">n = 44,090</span>)—highlights the scale of the compositional transition. Era-mean AI adoption expanded nearly sevenfold from 1.6% in ML to 4.3% in DL and 11.3% in GenAI* (<a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2a</a>). Over those same three eras, primary producers stepped down from 66.0% to 58.1% and 46.8%, mixotrophs eased from 20.0% to 15.6%, data consumers more than doubled from 13.7% to 33.5%, and articles without empirical data rose from 0.2% to 4.1% (<a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2b</a>).
+              </p>
+              <p>
+                Crucially, the association between AI methods and secondary data consumption persists even when holding calendar time constant. Comparing matched received-date quarters across all three eras (ML: <span class="font-mono text-[0.92em]">n = 40</span> quarters; DL: <span class="font-mono text-[0.92em]">n = 32</span>; GenAI*: <span class="font-mono text-[0.92em]">n = 11</span>), AI-classified papers exhibited significantly higher quarterly CPDC means than non-AI papers in every period: 1.164 vs. 0.176 in ML, 1.122 vs. 0.280 in DL, and 1.464 vs. 0.453 in GenAI* (all Holm-adjusted <span class="font-mono text-[0.92em]">p &lt; .001</span>; <a href="#p1-fig-2" class="text-botanical-forest font-medium underline decoration-botanical-border underline-offset-2 hover:decoration-botanical-forest">Fig. 2c</a>).
+              </p>
+            </div>
+
+            
+            <figure id="p1-fig-2" class="figure-plate scroll-mt-36 bg-white rounded-[10px] border border-botanical-border p-5 sm:p-7 shadow-plate">
+              <figcaption class="pb-4 mb-5 border-b border-botanical-border/70">
+                <div class="font-sans font-bold text-base sm:text-[1.12rem] text-botanical-evergreen tracking-tight">
+                  Figure 2 <span class="text-botanical-border font-normal mx-1">|</span> Era-level shifts and within-period association with AI use
+                </div>
+                <p class="text-xs text-botanical-muted mt-1">
+                  PLOS classified articles by era (ML: n = 142,803; DL: n = 166,917; GenAI*: n = 44,090) and matched received-date quarters
+                </p>
+              </figcaption>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    A <span class="font-semibold ml-1">AI-method articles by era (%)</span>
+                  </h3>
+                  <div class="flex items-center gap-3 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#16583d]"></span>Era mean (%)</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-a"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    B <span class="font-semibold ml-1">Data provenance by era (%)</span>
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10.5px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#16583d]"></span>Producer</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#4ea17c]"></span>Mixotroph</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#d9822b]"></span>Consumer</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-[2px] bg-[#9db2a5]"></span>No data</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-b"></canvas>
+                  </div>
+                </div>
+
+                
+                <div class="min-w-0 flex flex-col">
+                  <h3 class="font-sans font-bold text-[13px] text-botanical-evergreen mb-2">
+                    C <span class="font-semibold ml-1">Mean quarterly CPDC: Non-AI vs. AI</span>
+                  </h3>
+                  <div class="flex items-center gap-3.5 text-[11px] text-botanical-muted mb-2.5">
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#8ca398]"></span>Non-AI</span>
+                    <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-[2px] bg-[#c95b3c]"></span>AI</span>
+                  </div>
+                  <div class="relative w-full h-[240px]">
+                    <canvas id="fig2-c"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11.5px] text-botanical-muted mt-5 pt-3 border-t border-botanical-border/60 leading-relaxed">
+                Panel C compares matched received-date quarters (ML: n = 40; DL: n = 32; GenAI*: n = 11); Holm-adjusted significance: *** p &lt; .001. GenAI* includes incomplete 2025.
+              </p>
+            </figure>
+          </section>
+
+          
+          <section id="p1-sec-3" class="scroll-mt-36 space-y-6">
+            <div class="border-b border-botanical-border pb-3">
+              <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow mb-1.5">
+                SECTION I.3 · EMPIRICAL SYNTHESIS
+              </div>
+              <h2 class="font-display font-bold text-2xl sm:text-[1.85rem] leading-tight text-botanical-evergreen">
+                What Is Missing: A Measure of Empirical Contribution
+              </h2>
+            </div>
+
+            
+            <blockquote class="bg-botanical-tint border-l-4 border-botanical-forest rounded-r-[10px] px-6 sm:px-8 py-6 sm:py-7 shadow-plate print-avoid">
+              <p class="font-serif italic text-xl sm:text-[1.38rem] leading-[1.6] text-botanical-evergreen">
+                “What is missing, then, is not evidence but a measure. Publication counts record that a paper exists; they do not record whether it added an observation to the world or reanalysed observations already there. Without that distinction, the balance could shift without anyone noticing—and the first to notice might be the end users needing data that was no longer collected.”
+              </p>
+            </blockquote>
+
+            <div class="editorial-prose font-serif text-[1.06rem] leading-[1.82] text-botanical-prose space-y-4">
+              <p>
+                Bibliometric trends can document how the published record is shifting, but they cannot by themselves reveal the human incentives driving those patterns. To understand why researchers are adopting AI so rapidly—and how journal professionals perceive competitive pressures, peer-review standards, and realistic safeguards—Part II examines parallel pilot surveys collected at both the starting point and endpoint of the scientific publication chain.
+              </p>
+            </div>
+          </section>
+
+          
+          <section id="p1-appendix" class="scroll-mt-36">
+            <details class="group bg-white rounded-[10px] border border-botanical-border shadow-plate overflow-hidden print-avoid">
+              <summary class="px-5 sm:px-6 py-4 flex items-center justify-between gap-4 cursor-pointer select-none hover:bg-botanical-soft transition">
+                <div>
+                  <div class="text-[10.5px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow">
+                    PART I APPENDIX · VERIFIED CORPUS TABLE
+                  </div>
+                  <h2 class="font-display font-bold text-lg text-botanical-evergreen mt-0.5">
+                    Table A1 · PLOS Era Summary &amp; Quarterly CPDC Comparison
+                  </h2>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-botanical-canvas border border-botanical-border text-botanical-evergreen group-open:bg-botanical-forest group-open:text-white group-open:border-botanical-forest transition inline-flex items-center gap-1.5 shrink-0">
+                  <span class="group-open:hidden">Show Table</span>
+                  <span class="hidden group-open:inline">Hide Table</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+
+              <div class="px-5 sm:px-6 pb-6 pt-4 border-t border-botanical-border bg-white">
+                <div class="overflow-x-auto rounded-lg border border-botanical-border">
+                  <table class="min-w-full text-xs text-left border-collapse tabular-nums">
+                    <thead class="bg-botanical-tint text-botanical-evergreen font-semibold border-b border-botanical-border">
+                      <tr>
+                        <th class="px-3 py-2.5">Era</th>
+                        <th class="px-3 py-2.5 text-right">Articles (n)</th>
+                        <th class="px-3 py-2.5 text-right">AI Share</th>
+                        <th class="px-3 py-2.5 text-right">Producer</th>
+                        <th class="px-3 py-2.5 text-right">Mixotroph</th>
+                        <th class="px-3 py-2.5 text-right">Consumer</th>
+                        <th class="px-3 py-2.5 text-right">No Data</th>
+                        <th class="px-3 py-2.5 text-right">Qtr CPDC (Non-AI / AI)</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-botanical-border/60 font-mono text-botanical-prose">
+                      <tr class="hover:bg-botanical-soft">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">ML (2003–2014)</td>
+                        <td class="px-3 py-2 text-right">142,803</td>
+                        <td class="px-3 py-2 text-right">1.6%</td>
+                        <td class="px-3 py-2 text-right">66.0%</td>
+                        <td class="px-3 py-2 text-right">20.0%</td>
+                        <td class="px-3 py-2 text-right">13.7%</td>
+                        <td class="px-3 py-2 text-right">0.2%</td>
+                        <td class="px-3 py-2 text-right">0.176 / 1.164***</td>
+                      </tr>
+                      <tr class="hover:bg-botanical-soft">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">DL (2015–2022)</td>
+                        <td class="px-3 py-2 text-right">166,917</td>
+                        <td class="px-3 py-2 text-right">4.3%</td>
+                        <td class="px-3 py-2 text-right">58.1%</td>
+                        <td class="px-3 py-2 text-right">18.9%</td>
+                        <td class="px-3 py-2 text-right">22.3%</td>
+                        <td class="px-3 py-2 text-right">0.8%</td>
+                        <td class="px-3 py-2 text-right">0.280 / 1.122***</td>
+                      </tr>
+                      <tr class="hover:bg-botanical-soft bg-botanical-soft/60">
+                        <td class="px-3 py-2 font-sans font-semibold text-botanical-evergreen">GenAI* (2023–2025*)</td>
+                        <td class="px-3 py-2 text-right">44,090</td>
+                        <td class="px-3 py-2 text-right font-semibold text-botanical-forest">11.3%</td>
+                        <td class="px-3 py-2 text-right font-semibold">46.8%</td>
+                        <td class="px-3 py-2 text-right">15.6%</td>
+                        <td class="px-3 py-2 text-right font-semibold text-botanical-terracotta">33.5%</td>
+                        <td class="px-3 py-2 text-right">4.1%</td>
+                        <td class="px-3 py-2 text-right">0.453 / 1.464***</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </details>
+          <details class="annual-explorer"><summary>Explore annual values and data tables</summary><div class="plot-card"><label for="metric">Annual trend</label><select id="metric"><option value="ai">AI adoption</option><option value="role">Data roles</option><option value="family">AI families</option><option value="balance">CPDC and evenness</option></select><div id="chart"></div><div id="legend" class="legend"></div><label class="yearlabel" for="year">Inspect received year <output id="year-label" for="year"></output></label><input id="year" type="range" min="0" max="22" value="22"><div id="readout" aria-live="polite"></div></div><p class="note">* 2025 covers incomplete records. The AI-family series starts in 2006. Dashed lines mark the boundaries between methodological eras.</p><details class="fold"><summary>Annual data</summary><div class="table-scroll" tabindex="0"><table><thead><tr><th scope="col">Received year</th><th scope="col">AI (%)</th><th scope="col">Producer (%)</th><th scope="col">Mixed (%)</th><th scope="col">Consumer (%)</th><th scope="col">No data (%)</th><th scope="col">CPDC</th><th scope="col">Evenness</th></tr></thead><tbody><tr><th scope="row">2003</th><td>2.75</td><td>62.39</td><td>27.52</td><td>10.09</td><td>0.00</td><td>0.112</td><td>0.635</td></tr><tr><th scope="row">2004</th><td>0.83</td><td>62.24</td><td>22.82</td><td>14.53</td><td>0.41</td><td>0.171</td><td>0.675</td></tr><tr><th scope="row">2005</th><td>0.97</td><td>48.55</td><td>27.01</td><td>24.12</td><td>0.32</td><td>0.319</td><td>0.769</td></tr><tr><th scope="row">2006</th><td>2.96</td><td>53.37</td><td>23.27</td><td>23.03</td><td>0.33</td><td>0.300</td><td>0.744</td></tr><tr><th scope="row">2007</th><td>1.60</td><td>61.10</td><td>21.71</td><td>16.77</td><td>0.42</td><td>0.203</td><td>0.689</td></tr><tr><th scope="row">2008</th><td>1.28</td><td>63.13</td><td>21.95</td><td>14.75</td><td>0.17</td><td>0.173</td><td>0.661</td></tr><tr><th scope="row">2009</th><td>1.41</td><td>64.71</td><td>21.22</td><td>13.80</td><td>0.27</td><td>0.161</td><td>0.649</td></tr><tr><th scope="row">2010</th><td>1.47</td><td>65.47</td><td>20.92</td><td>13.41</td><td>0.20</td><td>0.155</td><td>0.640</td></tr><tr><th scope="row">2011</th><td>1.65</td><td>66.70</td><td>20.86</td><td>12.25</td><td>0.19</td><td>0.140</td><td>0.625</td></tr><tr><th scope="row">2012</th><td>1.57</td><td>67.48</td><td>19.92</td><td>12.39</td><td>0.21</td><td>0.142</td><td>0.619</td></tr><tr><th scope="row">2013</th><td>1.64</td><td>66.70</td><td>19.36</td><td>13.72</td><td>0.22</td><td>0.159</td><td>0.630</td></tr><tr><th scope="row">2014</th><td>1.77</td><td>65.74</td><td>19.02</td><td>14.98</td><td>0.26</td><td>0.177</td><td>0.643</td></tr><tr><th scope="row">2015</th><td>2.10</td><td>63.68</td><td>20.02</td><td>16.07</td><td>0.23</td><td>0.192</td><td>0.661</td></tr><tr><th scope="row">2016</th><td>2.43</td><td>62.04</td><td>19.24</td><td>18.43</td><td>0.29</td><td>0.227</td><td>0.680</td></tr><tr><th scope="row">2017</th><td>3.30</td><td>60.53</td><td>19.53</td><td>19.60</td><td>0.34</td><td>0.245</td><td>0.694</td></tr><tr><th scope="row">2018</th><td>3.99</td><td>58.63</td><td>20.18</td><td>20.77</td><td>0.42</td><td>0.264</td><td>0.711</td></tr><tr><th scope="row">2019</th><td>4.43</td><td>57.28</td><td>19.98</td><td>22.47</td><td>0.27</td><td>0.291</td><td>0.716</td></tr><tr><th scope="row">2020</th><td>5.39</td><td>55.17</td><td>17.79</td><td>26.28</td><td>0.76</td><td>0.360</td><td>0.738</td></tr><tr><th scope="row">2021</th><td>6.57</td><td>52.06</td><td>17.42</td><td>28.68</td><td>1.84</td><td>0.413</td><td>0.776</td></tr><tr><th scope="row">2022</th><td>7.97</td><td>51.36</td><td>16.29</td><td>29.54</td><td>2.81</td><td>0.437</td><td>0.792</td></tr><tr><th scope="row">2023</th><td>9.60</td><td>47.31</td><td>15.30</td><td>33.60</td><td>3.79</td><td>0.537</td><td>0.816</td></tr><tr><th scope="row">2024</th><td>11.99</td><td>46.40</td><td>15.69</td><td>33.77</td><td>4.14</td><td>0.544</td><td>0.826</td></tr><tr><th scope="row">2025*</th><td>15.58</td><td>46.61</td><td>16.51</td><td>31.83</td><td>5.05</td><td>0.504</td><td>0.843</td></tr></tbody></table></div></details><details class="fold"><summary>Annual AI-family composition</summary><div class="table-scroll" tabindex="0"><table><thead><tr><th scope="col">Received year</th><th scope="col">ML (%)</th><th scope="col">DL (%)</th><th scope="col">GenAI (%)</th><th scope="col">Hybrid (%)</th></tr></thead><tbody><tr><th scope="row">2006</th><td>77.78</td><td>22.22</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2007</th><td>89.13</td><td>10.87</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2008</th><td>86.44</td><td>13.56</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2009</th><td>90.53</td><td>9.47</td><td>0.00</td><td>0.00</td></tr><tr><th scope="row">2010</th><td>90.96</td><td>8.44</td><td>0.60</td><td>0.00</td></tr><tr><th scope="row">2011</th><td>83.90</td><td>15.79</td><td>0.31</td><td>0.00</td></tr><tr><th scope="row">2012</th><td>89.89</td><td>9.46</td><td>0.65</td><td>0.00</td></tr><tr><th scope="row">2013</th><td>89.07</td><td>10.22</td><td>0.53</td><td>0.18</td></tr><tr><th scope="row">2014</th><td>86.08</td><td>13.74</td><td>0.18</td><td>0.00</td></tr><tr><th scope="row">2015</th><td>87.35</td><td>12.30</td><td>0.35</td><td>0.00</td></tr><tr><th scope="row">2016</th><td>84.32</td><td>15.34</td><td>0.34</td><td>0.00</td></tr><tr><th scope="row">2017</th><td>78.78</td><td>20.80</td><td>0.42</td><td>0.00</td></tr><tr><th scope="row">2018</th><td>71.98</td><td>27.33</td><td>0.69</td><td>0.00</td></tr><tr><th scope="row">2019</th><td>66.62</td><td>33.12</td><td>0.26</td><td>0.00</td></tr><tr><th scope="row">2020</th><td>58.59</td><td>41.05</td><td>0.36</td><td>0.00</td></tr><tr><th scope="row">2021</th><td>55.54</td><td>43.64</td><td>0.75</td><td>0.07</td></tr><tr><th scope="row">2022</th><td>48.73</td><td>49.68</td><td>1.59</td><td>0.00</td></tr><tr><th scope="row">2023</th><td>45.99</td><td>50.80</td><td>3.10</td><td>0.11</td></tr><tr><th scope="row">2024</th><td>42.71</td><td>51.81</td><td>5.18</td><td>0.30</td></tr><tr><th scope="row">2025*</th><td>37.43</td><td>55.43</td><td>6.48</td><td>0.66</td></tr></tbody></table></div></details></details></section>
+
+          
+          <div class="report-bridge"><a href="publishing.html">Read Publishing Surveys</a></div></article>
+
+        
+        <aside class="lg:sticky lg:top-36 space-y-5">
+          
+          <nav aria-label="Part I outline" class="hidden lg:block bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate no-print">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-2.5 border-b border-botanical-border/70">
+              IN PART I · PLOS CORPUS
+            </div>
+            <ul class="space-y-0.5 text-[12.5px]">
+              <li>
+                <a href="#p1-sec-1" data-spy="p1-sec-1" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.1</span>Longitudinal Shifts
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p1-fig-1" data-spy="p1-fig-1" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 1 · Trends &amp; provenance
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p1-sec-2" data-spy="p1-sec-2" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.2</span>Era Shifts &amp; AI Link
+                </a>
+              </li>
+              <li class="pl-4">
+                <a href="#p1-fig-2" data-spy="p1-fig-2" class="spy-link block px-2 py-1 rounded-r-md border-l-2 border-transparent text-[11.5px] text-botanical-muted hover:text-botanical-forest transition">
+                  Fig. 2 · Eras &amp; quarterly CPDC
+                </a>
+              </li>
+              <li class="pt-1">
+                <a href="#p1-sec-3" data-spy="p1-sec-3" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  <span class="font-mono text-[11px] mr-1">I.3</span>The Missing Measure
+                </a>
+              </li>
+              <li>
+                <a href="#p1-appendix" data-spy="p1-appendix" class="spy-link block px-2.5 py-1.5 rounded-r-md border-l-[3px] border-transparent text-botanical-muted hover:text-botanical-evergreen hover:bg-botanical-soft transition">
+                  Table A1 · Era Summary
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          
+          <div class="bg-white rounded-[10px] border border-botanical-border p-5 shadow-plate print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-eyebrow pb-2.5 mb-3 border-b border-botanical-border/70">
+              PART I · AT A GLANCE
+            </div>
+            <dl class="space-y-3 text-xs">
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">Total PLOS articles</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-evergreen tabular-nums">353,810</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">AI-classified subset (2006–25*)</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-forest tabular-nums">14,507</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">2025* primary producers</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-evergreen tabular-nums">46.6%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2 pb-2.5 border-b border-botanical-border/50">
+                <dt class="text-botanical-muted">2025* data consumers</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-terracotta tabular-nums">31.8%</dd>
+              </div>
+              <div class="flex items-baseline justify-between gap-2">
+                <dt class="text-botanical-muted">2025* Shannon evenness</dt>
+                <dd class="font-mono font-semibold text-sm text-botanical-teal tabular-nums">0.843</dd>
+              </div>
+            </dl>
+          </div>
+
+          
+          <div class="bg-botanical-tint rounded-[10px] border border-botanical-border p-5 text-xs leading-relaxed text-botanical-prose print-avoid">
+            <div class="text-[11px] font-semibold uppercase tracking-[0.13em] text-botanical-evergreen mb-2.5">
+              PART I · METHODOLOGICAL NOTES
+            </div>
+            <ul class="space-y-2.5 text-[11.5px] text-botanical-prose/95">
+              <li>
+                <strong class="text-botanical-evergreen">Incomplete 2025* records:</strong> PLOS literature counts for 2025 reflect partial-year indexing and are marked with an asterisk across all era summaries and charts.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">Non-causal compositional share:</strong> Declining primary-data proportions reflect relative shares rather than confirmed absolute reductions in primary data collection.
+              </li>
+              <li>
+                <strong class="text-botanical-evergreen">CPDC definition:</strong> Consumer-to-Primary-Data-Contributor ratio measures the balance between articles relying solely on pre-existing data and those reporting primary data.
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div></div></main><footer class="site-footer"><div class="frame"><a class="brand" href="index.html" aria-label="AI and Science home"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>AI <em>&amp;</em> Science</a><span>How AI Is Transforming Science</span><a href="#main">Back to top</a></div></footer><script defer src="chart-assets/chart.umd.js"></script><script defer src="report-charts.js"></script><script defer src="report-ui.js"></script><script defer src="plos-data.js"></script><script defer src="trends.js"></script></body></html>

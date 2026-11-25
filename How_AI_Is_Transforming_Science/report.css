@@ -22,3 +22,5 @@ body:has(.research-report){background:#fff}
 .concept-figure{margin:4px 0 34px;max-width:860px}.concept-figure img{display:block;width:100%;height:auto;background:#fff}.concept-figure figcaption{border-bottom:0;padding:0}.concept-figure figcaption p{margin-top:8px;font:.82rem/1.45 var(--sans);color:#5c5952}
 .figure-plate figcaption>div:first-child{min-width:0}
 #fig5-legend-full>span,#fig5-legend-comp>span{white-space:nowrap}
+.research-report figure .relative:has(>canvas){overflow:hidden}
+.research-report figure .relative>canvas{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;max-width:none}

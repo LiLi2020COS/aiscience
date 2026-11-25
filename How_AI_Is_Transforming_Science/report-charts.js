@@ -527,6 +527,66 @@
       }
     };
 
+    // A chart frame keeps its CSS height even when Chart.js briefly measures a
+    // zero content width and writes that width onto the canvas. Parent size
+    // does not change, so Chart.js never measures again and the plot stays blank.
+    const chartFrameState = new WeakMap();
+    function syncChartFrame(chart) {
+      if (!chart || chart.destroyed) return;
+      let state = chartFrameState.get(chart);
+      if (!state) {
+        state = { frame: 0, tries: 0, key: '' };
+        chartFrameState.set(chart, state);
+      }
+      if (state.frame) return;
+      state.frame = requestAnimationFrame(() => {
+        state.frame = 0;
+        const canvas = chart.canvas;
+        const box = canvas && canvas.parentElement;
+        if (!canvas || !box || !box.isConnected || chart.destroyed) return;
+        const width = Math.round(box.clientWidth);
+        const height = Math.round(box.clientHeight);
+        if (width < 2 || height < 2) return;
+        const key = width + 'x' + height;
+        if (state.key !== key) {
+          state.key = key;
+          state.tries = 0;
+        }
+        if (Math.abs(chart.width - width) <= 2 && Math.abs(chart.height - height) <= 2) return;
+        if (state.tries >= 4) return;
+        state.tries += 1;
+        chart.resize(width, height);
+      });
+    }
+    const framePaintPlugin = {
+      id: 'framePaint',
+      afterInit(chart) {
+        syncChartFrame(chart);
+        const box = chart.canvas && chart.canvas.parentElement;
+        if (!box || typeof ResizeObserver !== 'function') return;
+        const observer = new ResizeObserver(() => syncChartFrame(chart));
+        observer.observe(box);
+        observer.observe(chart.canvas);
+        chartFrameState.get(chart).observer = observer;
+      },
+      resize(chart) {
+        const box = chart.canvas && chart.canvas.parentElement;
+        if (!box) return;
+        const width = box.clientWidth;
+        const height = box.clientHeight;
+        if (width < 2 || height < 2) return;
+        if (chart.width >= 2 && chart.height >= 2 && Math.abs(chart.width - width) <= 2 && Math.abs(chart.height - height) <= 2) return;
+        syncChartFrame(chart);
+      },
+      afterDestroy(chart) {
+        const state = chartFrameState.get(chart);
+        if (!state) return;
+        if (state.frame) cancelAnimationFrame(state.frame);
+        if (state.observer) state.observer.disconnect();
+        chartFrameState.delete(chart);
+      }
+    };
+
     Chart.register(
       eraZonesPlugin,
       endAnnotationsPlugin,
@@ -534,7 +594,8 @@
       sigBracketsPlugin,
       ringCenterPlugin,
       dotWhiskerPlugin,
-      rightSummaryColumnPlugin
+      rightSummaryColumnPlugin,
+      framePaintPlugin
     );
 
     /**
@@ -1383,29 +1444,4 @@
       if (canvas) enableKeyboardReadout(canvas);
     }
 
-    function refitCharts() {
-      document.querySelectorAll('canvas').forEach(canvas => {
-        const chart = window.Chart && Chart.getChart(canvas);
-        const box = canvas.parentElement;
-        if (chart && box && box.clientWidth > 1 && box.clientHeight > 1) chart.resize();
-      });
-    }
-    window.addEventListener('load', refitCharts);
-    if (typeof ResizeObserver === 'function') {
-      const fitted = new WeakMap();
-      const observer = new ResizeObserver(entries => {
-        entries.forEach(entry => {
-          const width = Math.round(entry.contentRect.width);
-          const height = Math.round(entry.contentRect.height);
-          if (width < 2 || height < 2) return;
-          const size = width + 'x' + height;
-          if (fitted.get(entry.target) === size) return;
-          fitted.set(entry.target, size);
-          const canvas = entry.target.querySelector('canvas');
-          const chart = canvas && Chart.getChart(canvas);
-          if (chart) chart.resize();
-        });
-      });
-      document.querySelectorAll('.figure-plate .relative').forEach(node => observer.observe(node));
-    }
 })();

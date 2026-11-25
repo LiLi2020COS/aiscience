@@ -1382,4 +1382,30 @@
       const canvas = document.getElementById(id);
       if (canvas) enableKeyboardReadout(canvas);
     }
+
+    function refitCharts() {
+      document.querySelectorAll('canvas').forEach(canvas => {
+        const chart = window.Chart && Chart.getChart(canvas);
+        const box = canvas.parentElement;
+        if (chart && box && box.clientWidth > 1 && box.clientHeight > 1) chart.resize();
+      });
+    }
+    window.addEventListener('load', refitCharts);
+    if (typeof ResizeObserver === 'function') {
+      const fitted = new WeakMap();
+      const observer = new ResizeObserver(entries => {
+        entries.forEach(entry => {
+          const width = Math.round(entry.contentRect.width);
+          const height = Math.round(entry.contentRect.height);
+          if (width < 2 || height < 2) return;
+          const size = width + 'x' + height;
+          if (fitted.get(entry.target) === size) return;
+          fitted.set(entry.target, size);
+          const canvas = entry.target.querySelector('canvas');
+          const chart = canvas && Chart.getChart(canvas);
+          if (chart) chart.resize();
+        });
+      });
+      document.querySelectorAll('.figure-plate .relative').forEach(node => observer.observe(node));
+    }
 })();
